@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>FSharp.Literate</name></assembly>
+<members>
+<member name="">
+
+</member>
+<member name="T:FSharp.Collections.Tree`1">
+<summary>
+ Represents a tree with nodes containing values an a list of children
+</summary>
+</member>
+<member name="M:FSharp.Collections.Tree.ofIndentedList``1(Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.Int32,``0}})">
+<summary>
+ Turns a list of items with an indentation specified by an integer
+ into a tree where indented items are children.
+</summary>
+</member>
+<member name="M:FSharp.Collections.Tree.takeDeeperThan``2(``0,Microsoft.FSharp.Collections.FSharpList{System.Tuple{``0,``1}})">
+<summary>
+ Takes elements that are deeper (children) and turns them into nodes
+</summary>
+</member>
+<member name="M:FSharp.Collections.Tree.takeAtLevel``2(``0,Microsoft.FSharp.Collections.FSharpList{System.Tuple{``0,``1}})">
+<summary>
+ Takes all elements at the specified level and turns them into nodes
+</summary>
+</member>
+<member name="T:FSharp.Collections.Tree">
+
+</member>
+<member name="M:FSharp.Collections.List.nestUnderLastMatching``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},Microsoft.FSharp.Collections.FSharpList{``0})">
+<summary>
+ A function that nests items of the input sequence 
+ that do not match a specified predicate under the 
+ last item that matches the predicate. 
+</summary>
+</member>
+<member name="M:FSharp.Collections.List.partitionUntilEquals``1(Microsoft.FSharp.Collections.FSharpList{``0},Microsoft.FSharp.Collections.FSharpList{``0})">
+<summary>
+ Partitions the input list into two parts - the break is added 
+ at a point where the list starts with the specified sub-list.
+</summary>
+</member>
+<member name="M:FSharp.Collections.List.startsWith``1(Microsoft.FSharp.Collections.FSharpList{``0},Microsoft.FSharp.Collections.FSharpList{``0})">
+<summary>
+ Tests whether a list starts with the elements of another
+ list (specified as the first parameter)
+</summary>
+</member>
+<member name="M:FSharp.Collections.List.iterInterleaved``1(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Collections.FSharpList{``0})">
+<summary>
+ Iterates over the elements of the list and calls the first function for 
+ every element. Between each two elements, the second function is called.
+</summary>
+</member>
+<member name="M:FSharp.Collections.List.partitionUntil``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},Microsoft.FSharp.Collections.FSharpList{``0})">
+<summary>
+ Partitions list into an initial sequence (while the 
+ specified predicate returns &apos;false&apos;) and a rest of the list.
+</summary>
+</member>
+<member name="M:FSharp.Collections.List.partitionWhileLookahead``1(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Collections.FSharpList{``0},System.Boolean},Microsoft.FSharp.Collections.FSharpList{``0})">
+<summary>
+ Partitions list into an initial sequence (while the specified predicate 
+ returns true) and a rest of the list. The predicate gets the entire 
+ tail of the list and can perform lookahead.
+</summary>
+</member>
+<member name="M:FSharp.Collections.List.partitionWhile``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},Microsoft.FSharp.Collections.FSharpList{``0})">
+<summary>
+ Partitions list into an initial sequence (while the 
+ specified predicate returns true) and a rest of the list.
+</summary>
+</member>
+<member name="M:FSharp.Collections.List.skipWhile``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},Microsoft.FSharp.Collections.FSharpList{``0})">
+<summary>
+ Skips elements while the predicate returns &apos;true&apos; and then 
+ returns the rest of the list as a result.
+</summary>
+</member>
+<member name="M:FSharp.Collections.List.skip``1(System.Int32,Microsoft.FSharp.Collections.FSharpList{``0})">
+<summary>
+ Skips the specified number of elements. Fails if the list is smaller.
+</summary>
+</member>
+<member name="M:FSharp.Collections.List.singleton``1(``0)">
+<summary>
+ Returns a singleton list containing a specified value
+</summary>
+</member>
+<member name="T:FSharp.Collections.List">
+
+</member>
+<member name="M:FSharp.Literate.Literate.ProcessScriptFile(System.String,Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.OutputKind},Microsoft.FSharp.Core.FSharpOption{System.Reflection.Assembly},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,System.String}}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Tuple{System.String,FSharp.CodeFormat.SourceError},Microsoft.FSharp.Core.Unit}})">
+<summary>
+ Process F# Script file
+</summary>
+</member>
+<member name="M:FSharp.Literate.Literate.ProcessMarkdown(System.String,Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.OutputKind},Microsoft.FSharp.Core.FSharpOption{System.Reflection.Assembly},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,System.String}}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Tuple{System.String,FSharp.CodeFormat.SourceError},Microsoft.FSharp.Core.Unit}})">
+<summary>
+ Process Markdown document
+</summary>
+</member>
+<member name="M:FSharp.Literate.Literate.ProcessDirectory(System.String,Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.OutputKind},Microsoft.FSharp.Core.FSharpOption{System.Reflection.Assembly},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,System.String}}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Tuple{System.String,FSharp.CodeFormat.SourceError},Microsoft.FSharp.Core.Unit}})">
+<summary>
+ Process directory containing a mix of Markdown documents and F# Script files
+</summary>
+</member>
+<member name="M:FSharp.Literate.Literate.DefaultArguments(System.String,Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.OutputKind},Microsoft.FSharp.Core.FSharpOption{System.Reflection.Assembly},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,System.String}}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Tuple{System.String,FSharp.CodeFormat.SourceError},Microsoft.FSharp.Core.Unit}})">
+<summary>
+ Provides default values for all optional parameters
+</summary>
+</member>
+<member name="T:FSharp.Literate.Literate">
+<summary>
+ This type provides three simple methods for calling the literate programming tool.
+ The `ProcessMarkdown` and `ProcessScriptFile` methods process a single Markdown document
+ and F# script, respectively. The `ProcessDirectory` method handles an entire directory tree
+ (ooking for `*.fsx` and `*.md` files).
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="P:FSharp.Literate.OutputKind.ContentTag">
+<summary>
+ The name of the {tag} that is used for pasting content into a template file
+ (the default is {document}, but that collides in LaTeX)
+</summary>
+</member>
+<member name="M:FSharp.Literate.OutputKind.ToString">
+<summary>
+ Name of the format (used as a file extension)
+</summary>
+</member>
+<member name="M:FSharp.Literate.OutputKind.Format(FSharp.Markdown.MarkdownDocument)">
+<summary>
+ Format a given document as HTML or LaTeX depending on the current kind
+</summary>
+</member>
+<member name="T:FSharp.Literate.OutputKind">
+<summary>
+ Defines the two possible output types from literate script: HTML and LaTeX.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.Literate.CodeBlockUtils.extractDefinitions(System.Collections.Generic.IEnumerable{FSharp.Literate.CodeBlockUtils.Block})">
+<summary>
+ Given a parsed script file, extract &quot;definitions&quot;. A definition is a part of 
+ the file that we want to include elsewhere (and hide in the original location):
+
+     (*** define:key ***)
+     let foo = 1 + 2
+
+ This function returns &apos;string * Block&apos; list containing all definitions 
+ together with all a list of all remaining blocks that were not extracted.
+</summary>
+</member>
+<member name="P:FSharp.Literate.CodeBlockUtils.parseScriptFile">
+<summary>
+ Parse F# script file into a sequence of snippets, comments and commands
+</summary>
+</member>
+<member name="M:FSharp.Literate.CodeBlockUtils.collectSnippet(Microsoft.FSharp.Collections.FSharpList{FSharp.CodeFormat.Line},Microsoft.FSharp.Collections.FSharpList{FSharp.CodeFormat.Line})">
+<summary>
+ Collecting a block of F# snippet
+</summary>
+</member>
+<member name="M:FSharp.Literate.CodeBlockUtils.collectComment(System.String,Microsoft.FSharp.Collections.FSharpList{FSharp.CodeFormat.Line})">
+<summary>
+ Waiting for the end of a comment      
+</summary>
+</member>
+<member name="M:FSharp.Literate.CodeBlockUtils.|ConcatenatedComments|_|(FSharp.CodeFormat.Line)">
+<summary>
+ Succeeds when a line (list of tokens) contains only Comment 
+ tokens and returns the text from the comment as a string
+</summary>
+</member>
+<member name="M:FSharp.Literate.CodeBlockUtils.trimBlanksAndReverse(System.Collections.Generic.IEnumerable{FSharp.CodeFormat.Line})">
+<summary>
+ Trim blank lines from both ends of a lines list &amp; reverse it (we accumulate 
+ lines &amp; we want to remove all blanks before returning BlockSnippet)
+</summary>
+</member>
+<member name="T:FSharp.Literate.CodeBlockUtils">
+<summary>
+ [omit]
+ Parsing of F# Script files with Markdown commands. Given a parsed script file, we 
+ split it into a sequence of comments, snippets and commands (comment starts with 
+ `(**` and ending with `*)` are translated to Markdown, snippet is all other F# code 
+ and command looks like `(*** key1:value, key2:value ***)` (and should be single line).
+</summary>
+</member>
+<member name="M:FSharp.Literate.LiterateUtils.findHeadings(System.Collections.Generic.IEnumerable{FSharp.Markdown.MarkdownParagraph},FSharp.Literate.OutputKind)">
+<summary>
+ Try find first-level heading in the paragraph collection
+</summary>
+</member>
+<member name="M:FSharp.Literate.LiterateUtils.replaceCodeSnippets(FSharp.Literate.OutputKind,System.Collections.Generic.IDictionary{System.String,System.String},FSharp.Markdown.MarkdownParagraph)">
+<summary>
+ Replace CodeBlock elements with formatted HTML that was processed by the F# snippets tool
+ (The dictionary argument is a map from original code snippets to formatted HTML snippets.)
+</summary>
+</member>
+<member name="M:FSharp.Literate.LiterateUtils.collectCodeSnippets(FSharp.Markdown.MarkdownParagraph)">
+<summary>
+ Iterate over Markdown document and extract all F# code snippets that we want
+ to colorize. We skip snippets that specify non-fsharp langauge e.g. [lang=csharp].
+</summary>
+</member>
+<member name="M:FSharp.Literate.LiterateUtils.replaceReferences(System.Collections.Generic.IDictionary{System.String,System.Int32})">
+<summary>
+ Given Markdown document, add a number using the given index to all indirect 
+ references. For example, [article][ref] becomes [article][ref] [1](#rfxyz)
+</summary>
+</member>
+<member name="P:FSharp.Literate.LiterateUtils.collectReferences">
+<summary>
+ Given Markdown document, get the keys of all IndirectLinks 
+ (to be used when generating paragraph with all references)
+</summary>
+</member>
+<member name="T:FSharp.Literate.LiterateUtils">
+<summary>
+ [omit]
+ Utilities for processing Markdown documents - extract links for references,
+ add links to references, extract code blocks for colorization and replace them
+ with formatted HTML (after running F# code formatter)
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Literate.SourceProcessors.ProcessingContext">
+<summary>
+ Specifies a context that is passed to the 
+ code/document processing functions
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.Literate.SourceProcessors.outputBlocks(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{FSharp.Literate.CodeBlockUtils.Block},System.Collections.Generic.IEnumerable{FSharp.CodeFormat.FormattedSnippet},System.Collections.Generic.IEnumerable{FSharp.Markdown.MarkdownDocument},System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Int32},FSharp.Literate.OutputKind)">
+<summary>
+ Write formatted blocks to a specified string builder 
+ and return first-level heading if there is some
+</summary>
+</member>
+<member name="M:FSharp.Literate.SourceProcessors.replaceParameters(System.Collections.Generic.IEnumerable{System.Tuple{System.String,System.String}},Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ Replace {parameter} in the input string with 
+ values defined in the specified list
+</summary>
+</member>
+<member name="M:FSharp.Literate.SourceProcessors.generateReferences``1(System.Collections.Generic.IDictionary{``0,System.Tuple{System.String,Microsoft.FSharp.Core.FSharpOption{System.String}}},System.Collections.Generic.IEnumerable{``0},FSharp.Literate.OutputKind)">
+<summary>
+ Given all links defined in the Markdown document and a list of all links
+ that are accessed somewhere from the document, generate References paragraph
+</summary>
+</member>
+<member name="M:FSharp.Literate.SourceProcessors.reportErrors(FSharp.Literate.SourceProcessors.ProcessingContext,System.String,System.Collections.Generic.IEnumerable{FSharp.CodeFormat.SourceError})">
+<summary>
+ Print information about all errors during the processing
+</summary>
+</member>
+<member name="T:FSharp.Literate.SourceProcessors">
+<summary>
+ [omit]
+</summary>
+</member>
+<member name="M:FSharp.Patterns.|Command|_|``2(``0,System.Collections.Generic.IDictionary{``0,``1})">
+<summary>
+ Lookup in a dictionary
+</summary>
+</member>
+<member name="M:FSharp.Patterns.|ParseCommand|_|(System.String)">
+<summary>
+ Utility for parsing commands - this deals with a single command.
+</summary>
+</member>
+<member name="M:FSharp.Patterns.|ParseCommands|_|(System.String)">
+<summary>
+ Utility for parsing commands. Commands can be used in different places. We 
+ recognize `key1=value, key2=value` and also `key1:value, key2:value`
+</summary>
+</member>
+<member name="M:FSharp.Patterns.|Let|``2(``0,``1)">
+<summary>
+ Parameterized pattern that assigns the specified value to the 
+ first component of a tuple. Usage:
+
+    match str with
+    | Let 1 (n, &quot;one&quot;) | Let 2 (n, &quot;two&quot;) -&gt; n
+ 
+</summary>
+</member>
+<member name="P:FSharp.Patterns.Lines.|TrimBlankStart|">
+<summary>
+ Removes whitespace lines from the beginning of the list
+</summary>
+</member>
+<member name="M:FSharp.Patterns.Lines.|TakeStartingWithOrBlank|_|(System.String,Microsoft.FSharp.Collections.FSharpList{System.String})">
+<summary>
+ Matches when there are some lines at the beginning that are 
+ either empty (or whitespace) or start with the specified string.
+ Returns all such lines from the beginning until a different line.
+</summary>
+</member>
+<member name="M:FSharp.Patterns.Lines.|TrimBlank|(Microsoft.FSharp.Collections.FSharpList{System.String})">
+<summary>
+ Removes blank lines from the start and the end of a list
+</summary>
+</member>
+<member name="T:FSharp.Patterns.Lines">
+
+</member>
+<member name="M:FSharp.Patterns.List.|AsString|(Microsoft.FSharp.Collections.FSharpList{System.Char})">
+<summary>
+ Retruns a list of characters as a string.
+</summary>
+</member>
+<member name="M:FSharp.Patterns.List.|BracketDelimited|_|(System.Char,System.Char,Microsoft.FSharp.Collections.FSharpList{System.Char})">
+<summary>
+ Matches a list if it starts with a bracketed list. Nested brackets
+ are skipped (by counting opening and closing brackets) and can be 
+ escaped using the &apos;\&apos; symbol.
+</summary>
+</member>
+<member name="M:FSharp.Patterns.List.|Delimited|_|``1(Microsoft.FSharp.Collections.FSharpList{``0})">
+<summary>
+ Matches a list if it starts with a sub-list that is delimited
+ using the specified delimiter. Returns a wrapped list and the rest.
+</summary>
+</member>
+<member name="M:FSharp.Patterns.List.|DelimitedWith|_|``1(Microsoft.FSharp.Collections.FSharpList{``0},Microsoft.FSharp.Collections.FSharpList{``0},Microsoft.FSharp.Collections.FSharpList{``0})">
+<summary>
+ Matches a list if it starts with a sub-list that is delimited
+ using the specified delimiters. Returns a wrapped list and the rest.
+</summary>
+</member>
+<member name="T:FSharp.Patterns.List">
+
+</member>
+<member name="M:FSharp.Patterns.String.|EqualsRepeated|_|(System.String,System.String)">
+<summary>
+ Matches when a string consists of some number of 
+ complete repetitions of a specified sub-string.
+</summary>
+</member>
+<member name="M:FSharp.Patterns.String.|StartsWithWrapped|_|(System.String,System.String,System.String)">
+<summary>
+ Matches when a string starts with a sub-string wrapped using the 
+ opening and closing sub-string specified in the parameter.
+ For example &quot;[aa]bc&quot; is wrapped in [ and ] pair. Returns the wrapped
+ text together with the rest.
+</summary>
+</member>
+<member name="M:FSharp.Patterns.String.|StartsWithRepeated|_|(System.String,System.String)">
+<summary>
+ Matches when a string starts with a non-zero number of complete
+ repetitions of the specified parameter (and returns the number
+ of repetitions, together with the rest of the string)
+
+    let (StartsWithRepeated &quot;/\&quot; (2, &quot; abc&quot;)) = &quot;/\/\ abc&quot;
+
+</summary>
+</member>
+<member name="M:FSharp.Patterns.String.|StartsAndEndsWithTrim|_|(System.String,System.String,System.String)">
+<summary>
+ Matches when a string starts with the given value and ends 
+ with a given value (and returns trimmed body)
+</summary>
+</member>
+<member name="M:FSharp.Patterns.String.|StartsAndEndsWith|_|(System.String,System.String,System.String)">
+<summary>
+ Matches when a string starts with the given value and ends 
+ with a given value (and returns the rest of it)
+</summary>
+</member>
+<member name="M:FSharp.Patterns.String.|StartsWithTrim|_|(System.String,System.String)">
+<summary>
+ Matches when a string starts with the specified sub-string
+ The matched string is trimmed from all whitespace.
+</summary>
+</member>
+<member name="M:FSharp.Patterns.String.|StartsWith|_|(System.String,System.String)">
+<summary>
+ Matches when a string starts with the specified sub-string
+</summary>
+</member>
+<member name="M:FSharp.Patterns.String.|StartsWithAny|_|(System.Collections.Generic.IEnumerable{System.String},System.String)">
+<summary>
+ Matches when a string starts with any of the specified sub-strings
+</summary>
+</member>
+<member name="M:FSharp.Patterns.String.|TrimStartAndCount|(System.String)">
+<summary>
+ Returns a string trimmed from the start together with 
+ the number of skipped whitespace characters
+</summary>
+</member>
+<member name="M:FSharp.Patterns.String.|TrimEndUsing|(System.Collections.Generic.IEnumerable{System.Char},System.String)">
+<summary>
+ Retrusn a string trimmed from the end using characters given as a parameter
+</summary>
+</member>
+<member name="M:FSharp.Patterns.String.|TrimStart|(System.String)">
+<summary>
+ Returns a string trimmed from the start
+</summary>
+</member>
+<member name="M:FSharp.Patterns.String.|TrimEnd|(System.String)">
+<summary>
+ Returns a string trimmed from the end
+</summary>
+</member>
+<member name="M:FSharp.Patterns.String.|TrimBoth|(System.String)">
+<summary>
+ Returns a string trimmed from both start and end
+</summary>
+</member>
+<member name="M:FSharp.Patterns.String.|Unindented|_|(System.String)">
+<summary>
+ Matches when a string does starts with non-whitespace
+</summary>
+</member>
+<member name="M:FSharp.Patterns.String.|WhiteSpace|_|(System.String)">
+<summary>
+ Matches when a string is a whitespace or null
+</summary>
+</member>
+<member name="T:FSharp.Patterns.String">
+
+</member>
+<member name="T:FSharp.Patterns">
+
+</member>
+</members>
+</doc>
