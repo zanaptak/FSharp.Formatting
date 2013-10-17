@@ -689,6 +689,20 @@
  The key can be preceeded by a space or other single whitespace thing.
 </summary>
 </member>
+<member name="M:FSharp.Markdown.Parser.|DelimitedMarkdown|_|(Microsoft.FSharp.Collections.FSharpList{System.Char},Microsoft.FSharp.Collections.FSharpList{System.Char})">
+<summary>
+ Matches a list if it starts with a sub-list that is delimited
+ using the specified delimiters. Returns a wrapped list and the rest.
+
+ This is similar to `List.Delimited`, but it skips over escaped characters.
+</summary>
+</member>
+<member name="M:FSharp.Markdown.Parser.|EscapedChar|_|(Microsoft.FSharp.Collections.FSharpList{System.Char})">
+<summary>
+ Succeeds when the specified character list starts with an escaped 
+ character - in that case, returns the character and the tail of the list
+</summary>
+</member>
 <member name="M:FSharp.Markdown.Parser.getLinkAndTitle(System.String)">
 <summary>
  Splits a link formatted as `http://link &quot;title&quot;` into a link part

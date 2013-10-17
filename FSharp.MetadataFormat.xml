@@ -338,9 +338,6 @@
 <member name="">
 
 </member>
-<member name="T:FSharp.MetadataFormat.Log">
-
-</member>
 <member name="">
 
 </member>
@@ -374,7 +371,31 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
 <member name="T:FSharp.MetadataFormat.Formatter">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.MetadataFormat.Log">
 
 </member>
 <member name="">
@@ -424,6 +445,16 @@
 </member>
 <member name="">
 
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.MetadataFormat.Reader.readCommentsInto``1(FSharp.MetadataFormat.Reader.ReadingContext,System.String,Microsoft.FSharp.Core.FSharpFunc{System.String,Microsoft.FSharp.Core.FSharpFunc{System.Collections.Generic.IDictionary{System.String,System.String},Microsoft.FSharp.Core.FSharpFunc{FSharp.MetadataFormat.Comment,``0}}})">
+<summary>
+ Reads XML documentation comments and calls the specified function
+ to parse the rest of the entity, unless [omit] command is set.
+ The function is called with category name, commands &amp; comment.
+</summary>
 </member>
 <member name="">
 
