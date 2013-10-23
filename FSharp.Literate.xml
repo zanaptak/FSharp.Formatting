@@ -2,6 +2,9 @@
 <doc>
 <assembly><name>FSharp.Literate</name></assembly>
 <members>
+<member name="T:AssemblyInfo">
+
+</member>
 <member name="">
 
 </member>
@@ -92,22 +95,61 @@
 <member name="T:FSharp.Collections.List">
 
 </member>
-<member name="M:FSharp.Literate.Literate.ProcessScriptFile(System.String,Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.OutputKind},Microsoft.FSharp.Core.FSharpOption{System.Reflection.Assembly},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,System.String}}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Tuple{System.String,FSharp.CodeFormat.SourceError},Microsoft.FSharp.Core.Unit}})">
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.Literate.Literate.ProcessScriptFile(System.String,Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.OutputKind},Microsoft.FSharp.Core.FSharpOption{System.Reflection.Assembly},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,System.String}}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Tuple{System.String,FSharp.CodeFormat.SourceError},Microsoft.FSharp.Core.Unit}},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}})">
 <summary>
  Process F# Script file
 </summary>
 </member>
-<member name="M:FSharp.Literate.Literate.ProcessMarkdown(System.String,Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.OutputKind},Microsoft.FSharp.Core.FSharpOption{System.Reflection.Assembly},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,System.String}}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Tuple{System.String,FSharp.CodeFormat.SourceError},Microsoft.FSharp.Core.Unit}})">
+<member name="M:FSharp.Literate.Literate.ProcessMarkdown(System.String,Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.OutputKind},Microsoft.FSharp.Core.FSharpOption{System.Reflection.Assembly},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,System.String}}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Tuple{System.String,FSharp.CodeFormat.SourceError},Microsoft.FSharp.Core.Unit}},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}})">
 <summary>
  Process Markdown document
 </summary>
 </member>
-<member name="M:FSharp.Literate.Literate.ProcessDirectory(System.String,Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.OutputKind},Microsoft.FSharp.Core.FSharpOption{System.Reflection.Assembly},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,System.String}}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Tuple{System.String,FSharp.CodeFormat.SourceError},Microsoft.FSharp.Core.Unit}})">
+<member name="M:FSharp.Literate.Literate.ProcessDirectory(System.String,Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.OutputKind},Microsoft.FSharp.Core.FSharpOption{System.Reflection.Assembly},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,System.String}}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Tuple{System.String,FSharp.CodeFormat.SourceError},Microsoft.FSharp.Core.Unit}},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}})">
 <summary>
  Process directory containing a mix of Markdown documents and F# Script files
 </summary>
 </member>
-<member name="M:FSharp.Literate.Literate.DefaultArguments(System.String,Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.OutputKind},Microsoft.FSharp.Core.FSharpOption{System.Reflection.Assembly},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,System.String}}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Tuple{System.String,FSharp.CodeFormat.SourceError},Microsoft.FSharp.Core.Unit}})">
+<member name="M:FSharp.Literate.Literate.DefaultArguments(System.String,Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.OutputKind},Microsoft.FSharp.Core.FSharpOption{System.Reflection.Assembly},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,System.String}}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Tuple{System.String,FSharp.CodeFormat.SourceError},Microsoft.FSharp.Core.Unit}},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}})">
 <summary>
  Provides default values for all optional parameters
 </summary>
@@ -146,6 +188,90 @@
 <summary>
  Defines the two possible output types from literate script: HTML and LaTeX.
 </summary>
+</member>
+<member name="">
+
+</member>
+<member name="F:FSharp.Literate.FSharp.Literate.RazorRender.ViewBag@">
+<summary>
+ Dynamic object with more properties (?)
+</summary>
+</member>
+<member name="F:FSharp.Literate.FSharp.Literate.RazorRender.Model@">
+<summary>
+ Model - whatever the user specifies for the page
+</summary>
+</member>
+<member name="F:FSharp.Literate.FSharp.Literate.RazorRender.Resolver@">
+<summary>
+ Global resolver (for use in &apos;DocPageTempalateBase&apos;)
+</summary>
+</member>
+<member name="P:FSharp.Literate.RazorRender.ViewBag(RazorEngine.Templating.DynamicViewBag)">
+<summary>
+ Dynamic object with more properties (?)
+</summary>
+</member>
+<member name="P:FSharp.Literate.RazorRender.Resolver(RazorEngine.Templating.ITemplateResolver)">
+<summary>
+ Global resolver (for use in &apos;DocPageTempalateBase&apos;)
+</summary>
+</member>
+<member name="P:FSharp.Literate.RazorRender.Model(System.Object)">
+<summary>
+ Model - whatever the user specifies for the page
+</summary>
+</member>
+<member name="P:FSharp.Literate.RazorRender.ViewBag">
+<summary>
+ Dynamic object with more properties (?)
+</summary>
+</member>
+<member name="P:FSharp.Literate.RazorRender.Resolver">
+<summary>
+ Global resolver (for use in &apos;DocPageTempalateBase&apos;)
+</summary>
+</member>
+<member name="P:FSharp.Literate.RazorRender.Model">
+<summary>
+ Model - whatever the user specifies for the page
+</summary>
+</member>
+<member name="M:FSharp.Literate.RazorRender.Resolve(System.Collections.Generic.IEnumerable{System.String},System.String)">
+<summary>
+ Find file in one of the specified layout roots
+</summary>
+</member>
+<member name="M:FSharp.Literate.RazorRender.ProcessFile``1(System.String,Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,``0}}})">
+<summary>
+ Process source file and return result as a string
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="P:FSharp.Literate.StringDictionary.Item(System.String)">
+<summary>
+ Report more useful errors when key not found (.NET dictionary does not do this...)
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
 </member>
 <member name="">
 
@@ -253,6 +379,48 @@
 <member name="">
 
 </member>
+<member name="M:FSharp.Literate.Log.run(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit})">
+<summary>
+ Run the specified I/O interaction in the synchronized log
+</summary>
+</member>
+<member name="M:FSharp.Literate.Log.logf``1(Microsoft.FSharp.Core.PrintfFormat{``0,Microsoft.FSharp.Core.Unit,System.String,Microsoft.FSharp.Core.Unit})">
+<summary>
+ Printf function that prints to a synchronized log
+</summary>
+</member>
+<member name="M:FSharp.Literate.Log.colored(System.ConsoleColor)">
+<summary>
+ Can be used to change the console color in a current scope
+ (The result is `IDisposable` and can be bound using `use`)
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Literate.Log">
+
+</member>
+<member name="M:FSharp.Literate.Parallel.pfor``2(System.Collections.Generic.IEnumerable{``0},Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,``1},Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{System.Threading.Tasks.ParallelLoopState,Microsoft.FSharp.Core.FSharpFunc{``1,``1}}})">
+<summary>
+ Parallel for loop with local state
+</summary>
+</member>
+<member name="T:FSharp.Literate.Parallel">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
 <member name="">
 
 </member>
@@ -292,12 +460,6 @@
  and return first-level heading if there is some
 </summary>
 </member>
-<member name="M:FSharp.Literate.SourceProcessors.replaceParameters(System.Collections.Generic.IEnumerable{System.Tuple{System.String,System.String}},Microsoft.FSharp.Core.FSharpOption{System.String})">
-<summary>
- Replace {parameter} in the input string with 
- values defined in the specified list
-</summary>
-</member>
 <member name="M:FSharp.Literate.SourceProcessors.generateReferences``1(System.Collections.Generic.IDictionary{``0,System.Tuple{System.String,Microsoft.FSharp.Core.FSharpOption{System.String}}},System.Collections.Generic.IEnumerable{``0},FSharp.Literate.OutputKind)">
 <summary>
  Given all links defined in the Markdown document and a list of all links
@@ -313,6 +475,18 @@
 <summary>
  [omit]
 </summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.Literate.Templating.replaceParameters(System.String,System.Collections.Generic.IEnumerable{System.Tuple{System.String,System.String}},Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ Replace {parameter} in the input string with 
+ values defined in the specified list
+</summary>
+</member>
+<member name="T:FSharp.Literate.Templating">
+
 </member>
 <member name="M:FSharp.Patterns.|Command|_|``2(``0,System.Collections.Generic.IDictionary{``0,``1})">
 <summary>

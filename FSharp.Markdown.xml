@@ -2,6 +2,9 @@
 <doc>
 <assembly><name>FSharp.Markdown</name></assembly>
 <members>
+<member name="T:AssemblyInfo">
+
+</member>
 <member name="">
 
 </member>
