@@ -465,6 +465,36 @@
  and command looks like `(*** key1:value, key2:value ***)` (and should be single line).
 </summary>
 </member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Literate.Evaluation">
+
+</member>
 <member name="M:FSharp.Literate.Formatting.getSourceDocument(FSharp.Literate.LiterateDocument)">
 <summary>
  Given literate document, get a new MarkdownDocument that represents the 
@@ -622,7 +652,7 @@
  their formatted representation (of `LiterateParagraph` type)
 </summary>
 </member>
-<member name="M:FSharp.Literate.Transformations.replaceCodeSnippets(System.Collections.Generic.IDictionary{System.String,Microsoft.FSharp.Collections.FSharpList{FSharp.CodeFormat.Line}},FSharp.Markdown.MarkdownParagraph)">
+<member name="M:FSharp.Literate.Transformations.replaceCodeSnippets(System.String,System.Collections.Generic.IDictionary{System.String,Microsoft.FSharp.Collections.FSharpList{FSharp.CodeFormat.Line}},FSharp.Markdown.MarkdownParagraph)">
 <summary>
  Replace CodeBlock elements with formatted HTML that was processed by the F# snippets tool
  (The dictionary argument is a map from original code snippets to formatted HTML snippets.)
