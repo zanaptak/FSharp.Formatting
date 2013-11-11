@@ -740,6 +740,13 @@
 <member name="T:FSharp.Patterns.List">
 
 </member>
+<member name="M:FSharp.Patterns.String.removeSpaces(System.Collections.Generic.IEnumerable{System.String})">
+<summary>
+ Given a list of lines indented with certan number of whitespace 
+ characters (spaces), remove the spaces from the beginning of each line 
+ and return the string as a list of lines
+</summary>
+</member>
 <member name="M:FSharp.Patterns.String.|EqualsRepeated|_|(System.String,System.String)">
 <summary>
  Matches when a string consists of some number of 
