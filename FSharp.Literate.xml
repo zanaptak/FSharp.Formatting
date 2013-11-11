@@ -219,6 +219,14 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
+<member name="P:FSharp.Literate.LiterateDocument.SourceFile">
+<summary>
+ Location where the file was loaded from
+</summary>
+</member>
 <member name="P:FSharp.Literate.LiterateDocument.Source">
 <summary>
  Original document source code
@@ -249,7 +257,7 @@
  Returns a dictionary containing explicitly defined links
 </summary>
 </member>
-<member name="M:FSharp.Literate.LiterateDocument.With(Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{FSharp.Markdown.MarkdownParagraph}},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Collections.Generic.IDictionary{System.String,System.Tuple{System.String,Microsoft.FSharp.Core.FSharpOption{System.String}}}},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.LiterateSource},Microsoft.FSharp.Core.FSharpOption{System.Collections.Generic.IEnumerable{FSharp.CodeFormat.SourceError}})">
+<member name="M:FSharp.Literate.LiterateDocument.With(Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{FSharp.Markdown.MarkdownParagraph}},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Collections.Generic.IDictionary{System.String,System.Tuple{System.String,Microsoft.FSharp.Core.FSharpOption{System.String}}}},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.LiterateSource},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Collections.Generic.IEnumerable{FSharp.CodeFormat.SourceError}})">
 <summary>
  Clone the document and change some of its properties
 </summary>
@@ -559,7 +567,7 @@
 <member name="T:FSharp.Literate.Parallel">
 
 </member>
-<member name="M:FSharp.Literate.ParseMarkdown.parseMarkdown(System.String)">
+<member name="M:FSharp.Literate.ParseMarkdown.parseMarkdown(System.String,System.String)">
 <summary>
  Parse the specified Markdown document and return it
  as `LiterateDocument` (without processing code snippets)
