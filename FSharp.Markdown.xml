@@ -2,6 +2,9 @@
 <doc>
 <assembly><name>FSharp.Markdown</name></assembly>
 <members>
+<member name="T:AssemblyInfo">
+
+</member>
 <member name="">
 
 </member>
@@ -359,6 +362,12 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
 <member name="T:FSharp.Markdown.Html.FormattingContext">
 <summary>
  Context passed around while formatting the HTML
@@ -568,6 +577,11 @@
  Recognize a definition of a link as in `[key]: http://url ...`
 </summary>
 </member>
+<member name="M:FSharp.Markdown.Parser.|LatexBlock|_|(Microsoft.FSharp.Collections.FSharpList{System.String})">
+<summary>
+ Recognizes Latex block - start with &quot;$$$&quot;
+</summary>
+</member>
 <member name="M:FSharp.Markdown.Parser.|Blockquote|_|(Microsoft.FSharp.Collections.FSharpList{System.String})">
 <summary>
  Recognizes blockquote - continues taking paragraphs 
@@ -710,12 +724,22 @@
  The key can be preceeded by a space or other single whitespace thing.
 </summary>
 </member>
+<member name="M:FSharp.Markdown.Parser.|DelimitedLatexInlineMath|_|(Microsoft.FSharp.Collections.FSharpList{System.Char},Microsoft.FSharp.Collections.FSharpList{System.Char})">
+<summary>
+ This is similar to `List.Delimited`, but it skips over Latex inline math characters.
+</summary>
+</member>
 <member name="M:FSharp.Markdown.Parser.|DelimitedMarkdown|_|(Microsoft.FSharp.Collections.FSharpList{System.Char},Microsoft.FSharp.Collections.FSharpList{System.Char})">
 <summary>
  Matches a list if it starts with a sub-list that is delimited
  using the specified delimiters. Returns a wrapped list and the rest.
 
  This is similar to `List.Delimited`, but it skips over escaped characters.
+</summary>
+</member>
+<member name="M:FSharp.Markdown.Parser.|EscapedLatexInlineMathChar|_|(Microsoft.FSharp.Collections.FSharpList{System.Char})">
+<summary>
+ Escape dollar inside a LaTex inline math span.
 </summary>
 </member>
 <member name="M:FSharp.Markdown.Parser.|EscapedChar|_|(Microsoft.FSharp.Collections.FSharpList{System.Char})">
@@ -914,12 +938,6 @@
 
 </member>
 <member name="T:FSharp.Patterns">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:System.AssemblyVersionInformation">
 
 </member>
 </members>

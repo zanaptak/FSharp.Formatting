@@ -2,6 +2,9 @@
 <doc>
 <assembly><name>FSharp.Literate</name></assembly>
 <members>
+<member name="T:AssemblyInfo">
+
+</member>
 <member name="">
 
 </member>
@@ -847,12 +850,6 @@
 
 </member>
 <member name="T:FSharp.Patterns">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:System.AssemblyVersionInformation">
 
 </member>
 </members>

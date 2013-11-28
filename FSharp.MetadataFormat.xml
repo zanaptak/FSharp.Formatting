@@ -2,6 +2,9 @@
 <doc>
 <assembly><name>FSharp.MetadataFormat</name></assembly>
 <members>
+<member name="T:AssemblyInfo">
+
+</member>
 <member name="">
 
 </member>
@@ -176,10 +179,16 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
 <member name="T:FSharp.MetadataFormat.Html">
 <summary>
  For use in the tempaltes (lives in namespace FSharp.MetadataFormat)
 </summary>
+</member>
+<member name="">
+
 </member>
 <member name="">
 
@@ -812,12 +821,6 @@
 
 </member>
 <member name="T:FSharp.Patterns">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:System.AssemblyVersionInformation">
 
 </member>
 </members>
