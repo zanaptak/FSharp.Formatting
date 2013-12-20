@@ -271,6 +271,12 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
 <member name="T:FSharp.MetadataFormat.MetadataFormat">
 <summary>
  Exposes metadata formatting functionality
@@ -540,25 +546,7 @@
 <member name="">
 
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="M:FSharp.MetadataFormat.Reader.readCommentsInto``1(FSharp.MetadataFormat.Reader.ReadingContext,System.String,Microsoft.FSharp.Core.FSharpFunc{System.String,Microsoft.FSharp.Core.FSharpFunc{System.Collections.Generic.IDictionary{System.String,System.String},Microsoft.FSharp.Core.FSharpFunc{FSharp.MetadataFormat.Comment,``0}}})">
+<member name="M:FSharp.MetadataFormat.Reader.readCommentsInto``1(FSharp.MetadataFormat.ValueReader.ReadingContext,System.String,Microsoft.FSharp.Core.FSharpFunc{System.String,Microsoft.FSharp.Core.FSharpFunc{System.Collections.Generic.IDictionary{System.String,System.String},Microsoft.FSharp.Core.FSharpFunc{FSharp.MetadataFormat.Comment,``0}}})">
 <summary>
  Reads XML documentation comments and calls the specified function
  to parse the rest of the entity, unless [omit] command is set.
@@ -578,6 +566,30 @@
 
 </member>
 <member name="T:FSharp.MetadataFormat.Reader">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
 
 </member>
 <member name="">
