@@ -2,9 +2,6 @@
 <doc>
 <assembly><name>FSharp.MetadataFormat</name></assembly>
 <members>
-<member name="T:AssemblyInfo">
-
-</member>
 <member name="">
 
 </member>
@@ -655,9 +652,6 @@
 <member name="">
 
 </member>
-<member name="">
-
-</member>
 <member name="T:FSharp.MetadataFormat.ValueReader">
 
 </member>
@@ -833,6 +827,12 @@
 
 </member>
 <member name="T:FSharp.Patterns">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:System.AssemblyVersionInformation">
 
 </member>
 </members>
