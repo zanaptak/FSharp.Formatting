@@ -710,6 +710,11 @@
  TODO: This does not handle nested emphasis well.
 </summary>
 </member>
+<member name="M:FSharp.Markdown.Parser.|AutoLink|_|(Microsoft.FSharp.Collections.FSharpList{System.Char})">
+<summary>
+ Recognizes an automatic link written using `http://url` or `https://url`
+</summary>
+</member>
 <member name="M:FSharp.Markdown.Parser.|DirectLink|_|(Microsoft.FSharp.Collections.FSharpList{System.Char})">
 <summary>
  Recognize a direct link written using `[body](http://url &quot;with title&quot;)`
