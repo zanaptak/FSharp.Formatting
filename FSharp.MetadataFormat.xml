@@ -477,6 +477,12 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
 <member name="M:FSharp.MetadataFormat.Log.run(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit})">
 <summary>
  Run the specified I/O interaction in the synchronized log

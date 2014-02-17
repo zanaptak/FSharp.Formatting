@@ -101,6 +101,9 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
 <member name="T:FSharp.Literate.CompilerContext">
 <summary>
  Specifies a context that is passed to functions 
@@ -149,13 +152,77 @@
 <member name="">
 
 </member>
+<member name="T:FSharp.Literate.FsiEvaluationResult">
+<summary>
+ Represents the result of evaluating an F# snippet. This contains
+ the generated console output together with a result and its static type.
+</summary>
+</member>
+<member name="F:FSharp.Literate.FSharp.Literate.FsiEvaluator.valueTransformations">
+<summary>
+ Registered transformations for pretty printing values
+ (the default formats value as a string and emits single CodeBlock)
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.Literate.FsiEvaluator.RegisterTransformation(Microsoft.FSharp.Core.FSharpFunc{System.Tuple{System.Object,System.Type},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{FSharp.Markdown.MarkdownParagraph}}})">
+<summary>
+ Register a function that formats (some) values that are produced by the evaluator.
+ The specified function should return &apos;Some&apos; when it knows how to format a value
+ and it should return formatted 
+</summary>
+</member>
+<member name="M:FSharp.Literate.FsiEvaluator.FormatValue``1(``0,System.Type)">
+<summary>
+ Format a specified value and produce a markdown document as the result
+</summary>
+</member>
+<member name="M:FSharp.Literate.FsiEvaluator.FormatOutput(System.String)">
+<summary>
+ Format a specified output (produces Markdown code block at the moment)
+</summary>
+</member>
+<member name="M:FSharp.Literate.FsiEvaluator.Evaluate(System.String,Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ Evaluates the given text in an fsi session and returns
+ an FsiEvaluationResult.
+
+ If evaluated as an expression, Result should be set with the
+ result of evaluating the text as an F# expression.
+ If not, just the console output of the evaluation is captured and
+ returned in Output.
+
+ If file is set, the text will be evaluated as if it was present in the
+ given script file - this is for correct usage of #I and #r with relative paths.
+ Note however that __SOURCE_DIRECTORY___ does not currently pick this up.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Literate.FsiEvaluator">
+<summary>
+ A wrapper for F# interactive serivice that is used to evaluate inline snippets
+</summary>
+</member>
+<member name="">
+
+</member>
 <member name="">
 
 </member>
 <member name="">
 
 </member>
-<member name="M:FSharp.Literate.Literate.ProcessScriptFile(System.String,Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.OutputKind},Microsoft.FSharp.Core.FSharpOption{FSharp.CodeFormat.CodeFormatAgent},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,System.String}}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}})">
+<member name="">
+
+</member>
+<member name="M:FSharp.Literate.Literate.ProcessScriptFile(System.String,Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.OutputKind},Microsoft.FSharp.Core.FSharpOption{FSharp.CodeFormat.CodeFormatAgent},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.FsiEvaluator},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,System.String}}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}})">
 <summary>
  Process F# Script file
 </summary>
@@ -165,27 +232,27 @@
  Process Markdown document
 </summary>
 </member>
-<member name="M:FSharp.Literate.Literate.ProcessDirectory(System.String,Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.OutputKind},Microsoft.FSharp.Core.FSharpOption{FSharp.CodeFormat.CodeFormatAgent},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,System.String}}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}})">
+<member name="M:FSharp.Literate.Literate.ProcessDirectory(System.String,Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.OutputKind},Microsoft.FSharp.Core.FSharpOption{FSharp.CodeFormat.CodeFormatAgent},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.FsiEvaluator},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,System.String}}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}})">
 <summary>
  Process directory containing a mix of Markdown documents and F# Script files
 </summary>
 </member>
-<member name="M:FSharp.Literate.Literate.ParseScriptString``1(System.String,Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{FSharp.CodeFormat.CodeFormatAgent},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{``0},Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
+<member name="M:FSharp.Literate.Literate.ParseScriptString``1(System.String,Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{FSharp.CodeFormat.CodeFormatAgent},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{``0},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.FsiEvaluator})">
 <summary>
  Parse F# Script file
 </summary>
 </member>
-<member name="M:FSharp.Literate.Literate.ParseScriptFile``1(System.String,Microsoft.FSharp.Core.FSharpOption{FSharp.CodeFormat.CodeFormatAgent},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{``0},Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
+<member name="M:FSharp.Literate.Literate.ParseScriptFile``1(System.String,Microsoft.FSharp.Core.FSharpOption{FSharp.CodeFormat.CodeFormatAgent},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{``0},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.FsiEvaluator})">
 <summary>
  Parse F# Script file
 </summary>
 </member>
-<member name="M:FSharp.Literate.Literate.ParseMarkdownString``1(System.String,Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{FSharp.CodeFormat.CodeFormatAgent},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{``0},Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
+<member name="M:FSharp.Literate.Literate.ParseMarkdownString``1(System.String,Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{FSharp.CodeFormat.CodeFormatAgent},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{``0},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.FsiEvaluator})">
 <summary>
  Parse Markdown document
 </summary>
 </member>
-<member name="M:FSharp.Literate.Literate.ParseMarkdownFile``1(System.String,Microsoft.FSharp.Core.FSharpOption{FSharp.CodeFormat.CodeFormatAgent},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{``0},Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
+<member name="M:FSharp.Literate.Literate.ParseMarkdownFile``1(System.String,Microsoft.FSharp.Core.FSharpOption{FSharp.CodeFormat.CodeFormatAgent},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{``0},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.FsiEvaluator})">
 <summary>
  Parse Markdown document
 </summary>
@@ -277,17 +344,42 @@
  uses an F# discriminated union type and so is best used from F#.
 </summary>
 </member>
-<member name="">
-
+<member name="T:FSharp.Literate.LiterateParagraph.LanguageTaggedCode">
+<summary>
+ Ordinary formatted code snippet in non-F# language (tagged with language code)
+</summary>
 </member>
-<member name="">
-
+<member name="T:FSharp.Literate.LiterateParagraph.FormattedCode">
+<summary>
+ Ordinary formatted code snippet
+</summary>
 </member>
-<member name="">
-
+<member name="T:FSharp.Literate.LiterateParagraph.OutputReferencedCode">
+<summary>
+ (*** define-output:foo ***) - Code snippet that is not visible, but whose output
+ is used somewehre else in the literate doc via (*** include-output:foo ***)
+</summary>
 </member>
-<member name="">
-
+<member name="T:FSharp.Literate.LiterateParagraph.HiddenCode">
+<summary>
+ (*** hide ***) or (*** define:foo ***) - Code snippet that is not visible in 
+ the output (but is needed for type checking, evaluation, or to be included later)
+</summary>
+</member>
+<member name="T:FSharp.Literate.LiterateParagraph.ValueReference">
+<summary>
+ (*** include-value:foo ***) - Include the formatting of a specified value here
+</summary>
+</member>
+<member name="T:FSharp.Literate.LiterateParagraph.OutputReference">
+<summary>
+ (*** include-output:foo ***) - Include output from a snippet here 
+</summary>
+</member>
+<member name="T:FSharp.Literate.LiterateParagraph.CodeReference">
+<summary>
+ (*** include:foo ***) - Include formatted snippet from other part of the document here 
+</summary>
 </member>
 <member name="">
 
@@ -473,36 +565,6 @@
  and command looks like `(*** key1:value, key2:value ***)` (and should be single line).
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharp.Literate.Evaluation">
-
-</member>
 <member name="M:FSharp.Literate.Formatting.getSourceDocument(FSharp.Literate.LiterateDocument)">
 <summary>
  Given literate document, get a new MarkdownDocument that represents the 
@@ -520,6 +582,12 @@
 </summary>
 </member>
 <member name="T:FSharp.Literate.Formatting">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
 
 </member>
 <member name="">
@@ -613,6 +681,17 @@
 <member name="T:FSharp.Literate.Templating">
 
 </member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Literate.Transformations.EvalKey">
+<summary>
+ Represents key in a dictionary with evaluation results
+</summary>
+</member>
 <member name="M:FSharp.Literate.Transformations.replaceLiterateParagraphs(FSharp.Literate.ProcessingContext,FSharp.Literate.LiterateDocument)">
 <summary>
  Replace all special &apos;LiterateParagraph&apos; elements with ordinary HTML/Latex
@@ -628,6 +707,35 @@
  Collect all code snippets in the document (so that we can format all of them)
  The resulting dictionary has Choice as the key, so that we can distinguish 
  between moved snippets and ordinary snippets
+</summary>
+</member>
+<member name="M:FSharp.Literate.Transformations.evaluateCodeSnippets(FSharp.Literate.CompilerContext,FSharp.Literate.LiterateDocument)">
+<summary>
+ Transform the specified literate document &amp; evaluate all F# snippets
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.Literate.Transformations.evalAllSnippets(FSharp.Literate.FsiEvaluator,FSharp.Literate.LiterateDocument)">
+<summary>
+ Given an evaluator and document, evaluate all code snippets and return a map with
+ their results - the key is `ValueRef(name)` for all value references and 
+ `OutputRef(name)` for all references to the snippet console output
+</summary>
+</member>
+<member name="M:FSharp.Literate.Transformations.evalBlocks(FSharp.Literate.FsiEvaluator,System.String,Microsoft.FSharp.Collections.FSharpList{System.Tuple{FSharp.Literate.Transformations.EvalKey,FSharp.Literate.FsiEvaluationResult}},Microsoft.FSharp.Collections.FSharpList{FSharp.Markdown.MarkdownParagraph})">
+<summary>
+ Evaluate all the snippets in a literate document, returning the results.
+ The result is a map of string * bool to FsiEvaluationResult. The bool indicates
+ whether the result is a top level variable (i.e. include-value) or a reference to 
+ some output (i.e. define-output and include-output). This just to put each of those
+ names in a separate scope.
+</summary>
+</member>
+<member name="M:FSharp.Literate.Transformations.unparse(Microsoft.FSharp.Collections.FSharpList{FSharp.CodeFormat.Line})">
+<summary>
+ Unparse a Line list to a string - for evaluation by fsi.
 </summary>
 </member>
 <member name="M:FSharp.Literate.Transformations.generateReferences(FSharp.Literate.LiterateDocument)">
