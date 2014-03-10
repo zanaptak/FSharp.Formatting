@@ -274,6 +274,9 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
 <member name="T:FSharp.MetadataFormat.MetadataFormat">
 <summary>
  Exposes metadata formatting functionality
@@ -483,6 +486,9 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
 <member name="M:FSharp.MetadataFormat.Log.run(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit})">
 <summary>
  Run the specified I/O interaction in the synchronized log
@@ -511,6 +517,12 @@
 </summary>
 </member>
 <member name="T:FSharp.MetadataFormat.Parallel">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
 
 </member>
 <member name="">
