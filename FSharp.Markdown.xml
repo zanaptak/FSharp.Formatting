@@ -365,6 +365,9 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
 <member name="T:FSharp.Markdown.Html.FormattingContext">
 <summary>
  Context passed around while formatting the HTML
@@ -727,6 +730,11 @@
 </summary>
 </member>
 <member name="M:FSharp.Markdown.Parser.|DelimitedLatexInlineMath|_|(Microsoft.FSharp.Collections.FSharpList{System.Char},Microsoft.FSharp.Collections.FSharpList{System.Char})">
+<summary>
+ This is similar to `List.Delimited`, but it skips over Latex inline math characters.
+</summary>
+</member>
+<member name="M:FSharp.Markdown.Parser.|DelimitedLatexDisplayMath|_|(Microsoft.FSharp.Collections.FSharpList{System.Char},Microsoft.FSharp.Collections.FSharpList{System.Char})">
 <summary>
  This is similar to `List.Delimited`, but it skips over Latex inline math characters.
 </summary>

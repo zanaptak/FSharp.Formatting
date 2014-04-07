@@ -564,6 +564,9 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
 <member name="M:FSharp.MetadataFormat.Reader.readCommentsInto``1(FSharp.MetadataFormat.ValueReader.ReadingContext,System.String,Microsoft.FSharp.Core.FSharpFunc{System.String,Microsoft.FSharp.Core.FSharpFunc{System.Collections.Generic.IDictionary{System.String,System.String},Microsoft.FSharp.Core.FSharpFunc{FSharp.MetadataFormat.Comment,``0}}})">
 <summary>
  Reads XML documentation comments and calls the specified function
@@ -583,7 +586,16 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
 <member name="T:FSharp.MetadataFormat.Reader">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
 
 </member>
 <member name="">

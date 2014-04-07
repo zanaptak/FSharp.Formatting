@@ -152,6 +152,9 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
 <member name="T:FSharp.Literate.FsiEvaluationResult">
 <summary>
  Represents the result of evaluating an F# snippet. This contains
@@ -354,10 +357,11 @@
  Ordinary formatted code snippet
 </summary>
 </member>
-<member name="T:FSharp.Literate.LiterateParagraph.OutputReferencedCode">
+<member name="T:FSharp.Literate.LiterateParagraph.NamedCode">
 <summary>
- (*** define-output:foo ***) - Code snippet that is not visible, but whose output
+ (*** define-output:foo ***) - Code snippet whose output or &quot;it&quot; value
  is used somewehre else in the literate doc via (*** include-output:foo ***)
+ or via (*** include-it:foo ***)
 </summary>
 </member>
 <member name="T:FSharp.Literate.LiterateParagraph.HiddenCode">
@@ -369,6 +373,11 @@
 <member name="T:FSharp.Literate.LiterateParagraph.ValueReference">
 <summary>
  (*** include-value:foo ***) - Include the formatting of a specified value here
+</summary>
+</member>
+<member name="T:FSharp.Literate.LiterateParagraph.ItValueReference">
+<summary>
+ (*** include-it:foo ***) - Include &quot;it&quot; value from a snippet here 
 </summary>
 </member>
 <member name="T:FSharp.Literate.LiterateParagraph.OutputReference">
@@ -564,6 +573,157 @@
  `(**` and ending with `*)` are translated to Markdown, snippet is all other F# code 
  and command looks like `(*** key1:value, key2:value ***)` (and should be single line).
 </summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Literate.EvaluatorHelpers.InteractiveSettings">
+<summary>
+ Implements a simple &apos;fsi&apos; object to be passed to the FSI evaluator
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Literate.EvaluatorHelpers.SimpleEventLoop">
+<summary>
+ Represents a simple (fake) event loop for the &apos;fsi&apos; object
+</summary>
+</member>
+<member name="T:FSharp.Literate.EvaluatorHelpers">
+
 </member>
 <member name="M:FSharp.Literate.Formatting.getSourceDocument(FSharp.Literate.LiterateDocument)">
 <summary>
