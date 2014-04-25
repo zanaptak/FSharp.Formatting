@@ -155,6 +155,24 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Literate.FsiEvaluationFailedInfo">
+<summary>
+ Record that is reported by the `EvaluationFailed` event when something
+ goes wrong during evalutaiton of an expression
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
 <member name="T:FSharp.Literate.FsiEvaluationResult">
 <summary>
  Represents the result of evaluating an F# snippet. This contains
@@ -172,6 +190,14 @@
 </member>
 <member name="">
 
+</member>
+<member name="">
+
+</member>
+<member name="P:FSharp.Literate.FsiEvaluator.EvaluationFailed">
+<summary>
+ This event is fired whenever an evaluation of an expression fails
+</summary>
 </member>
 <member name="M:FSharp.Literate.FsiEvaluator.RegisterTransformation(Microsoft.FSharp.Core.FSharpFunc{System.Tuple{System.Object,System.Type},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{FSharp.Markdown.MarkdownParagraph}}})">
 <summary>
