@@ -158,6 +158,12 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
 <member name="T:FSharp.Literate.FsiEvaluationFailedInfo">
 <summary>
  Record that is reported by the `EvaluationFailed` event when something
@@ -184,6 +190,9 @@
  Registered transformations for pretty printing values
  (the default formats value as a string and emits single CodeBlock)
 </summary>
+</member>
+<member name="">
+
 </member>
 <member name="">
 
@@ -381,6 +390,11 @@
 <member name="T:FSharp.Literate.LiterateParagraph.FormattedCode">
 <summary>
  Ordinary formatted code snippet
+</summary>
+</member>
+<member name="T:FSharp.Literate.LiterateParagraph.DoNotEvalCode">
+<summary>
+ (*** do-not-eval ***) - Code snippet that will not be evaluated
 </summary>
 </member>
 <member name="T:FSharp.Literate.LiterateParagraph.NamedCode">
