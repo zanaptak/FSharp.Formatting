@@ -440,9 +440,6 @@
 <member name="">
 
 </member>
-<member name="">
-
-</member>
 <member name="T:FSharp.Markdown.Latex.FormattingContext">
 <summary>
  Context passed around while formatting the LaTEX
@@ -474,9 +471,6 @@
 <summary>
  Write MarkdownSpan value to a TextWriter
 </summary>
-</member>
-<member name="">
-
 </member>
 <member name="">
 
