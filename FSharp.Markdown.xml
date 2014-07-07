@@ -118,25 +118,25 @@
 </member>
 <member name="M:FSharp.Markdown.Markdown.WriteHtml(FSharp.Markdown.MarkdownDocument,System.IO.TextWriter)">
 <summary>
- Transform the provided MakrdownDocument into HTML
+ Transform the provided MarkdownDocument into HTML
  format and write the result to a given writer.
 </summary>
 </member>
 <member name="M:FSharp.Markdown.Markdown.WriteHtml(FSharp.Markdown.MarkdownDocument)">
 <summary>
- Transform the provided MakrdownDocument into HTML
+ Transform the provided MarkdownDocument into HTML
  format and return the result as a string.
 </summary>
 </member>
 <member name="M:FSharp.Markdown.Markdown.WriteHtml(FSharp.Markdown.MarkdownDocument,System.String)">
 <summary>
- Transform the provided MakrdownDocument into HTML
+ Transform the provided MarkdownDocument into HTML
  format and return the result as a string.
 </summary>
 </member>
 <member name="M:FSharp.Markdown.Markdown.WriteHtml(FSharp.Markdown.MarkdownDocument,System.IO.TextWriter,System.String)">
 <summary>
- Transform the provided MakrdownDocument into HTML
+ Transform the provided MarkdownDocument into HTML
  format and write the result to a given writer.
 </summary>
 </member>
@@ -382,12 +382,12 @@
 </member>
 <member name="M:FSharp.Markdown.Html.formatParagraphs(FSharp.Markdown.Html.FormattingContext,Microsoft.FSharp.Collections.FSharpList{FSharp.Markdown.MarkdownParagraph})">
 <summary>
- Write a list of MarkdownParagrpah values to a TextWriter
+ Write a list of MarkdownParagraph values to a TextWriter
 </summary>
 </member>
 <member name="M:FSharp.Markdown.Html.formatParagraph(FSharp.Markdown.Html.FormattingContext,FSharp.Markdown.MarkdownParagraph)">
 <summary>
- Write a MarkdownParagrpah value to a TextWriter
+ Write a MarkdownParagraph value to a TextWriter
 </summary>
 </member>
 <member name="M:FSharp.Markdown.Html.formatSpans(FSharp.Markdown.Html.FormattingContext)">
@@ -454,12 +454,12 @@
 </member>
 <member name="M:FSharp.Markdown.Latex.formatParagraphs(FSharp.Markdown.Latex.FormattingContext,Microsoft.FSharp.Collections.FSharpList{FSharp.Markdown.MarkdownParagraph})">
 <summary>
- Write a list of MarkdownParagrpah values to a TextWriter
+ Write a list of MarkdownParagraph values to a TextWriter
 </summary>
 </member>
 <member name="M:FSharp.Markdown.Latex.formatParagraph(FSharp.Markdown.Latex.FormattingContext,FSharp.Markdown.MarkdownParagraph)">
 <summary>
- Write a MarkdownParagrpah value to a TextWriter
+ Write a MarkdownParagraph value to a TextWriter
 </summary>
 </member>
 <member name="M:FSharp.Markdown.Latex.formatSpans(FSharp.Markdown.Latex.FormattingContext)">
@@ -778,12 +778,16 @@
 <member name="M:FSharp.Patterns.|ParseCommand|_|(System.String)">
 <summary>
  Utility for parsing commands - this deals with a single command.
+ The key of the command should be identifier with just 
+ characters in it - otherwise, the parsing fails.
 </summary>
 </member>
 <member name="M:FSharp.Patterns.|ParseCommands|_|(System.String)">
 <summary>
  Utility for parsing commands. Commands can be used in different places. We 
  recognize `key1=value, key2=value` and also `key1:value, key2:value`
+ The key of the command should be identifier with just 
+ characters in it - otherwise, the parsing fails.
 </summary>
 </member>
 <member name="M:FSharp.Patterns.|Let|``2(``0,``1)">
