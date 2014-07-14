@@ -368,12 +368,15 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
 <member name="T:FSharp.Markdown.Html.FormattingContext">
 <summary>
  Context passed around while formatting the HTML
 </summary>
 </member>
-<member name="M:FSharp.Markdown.Html.formatMarkdown(System.IO.TextWriter,System.String,System.Collections.Generic.IDictionary{System.String,System.Tuple{System.String,Microsoft.FSharp.Core.FSharpOption{System.String}}})">
+<member name="M:FSharp.Markdown.Html.formatMarkdown(System.IO.TextWriter,System.String,System.Boolean,System.Collections.Generic.IDictionary{System.String,System.Tuple{System.String,Microsoft.FSharp.Core.FSharpOption{System.String}}})">
 <summary>
  Format Markdown document and write the result to 
  a specified TextWriter. Parameters specify newline character
