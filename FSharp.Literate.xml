@@ -290,17 +290,17 @@
 <member name="">
 
 </member>
-<member name="M:FSharp.Literate.Literate.ProcessScriptFile(System.String,Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.OutputKind},Microsoft.FSharp.Core.FSharpOption{FSharp.CodeFormat.CodeFormatAgent},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.IFsiEvaluator},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,System.String}}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}})">
+<member name="M:FSharp.Literate.Literate.ProcessScriptFile(System.String,Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.OutputKind},Microsoft.FSharp.Core.FSharpOption{FSharp.CodeFormat.CodeFormatAgent},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.IFsiEvaluator},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,System.String}}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}},Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
 <summary>
  Process F# Script file
 </summary>
 </member>
-<member name="M:FSharp.Literate.Literate.ProcessMarkdown(System.String,Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.OutputKind},Microsoft.FSharp.Core.FSharpOption{FSharp.CodeFormat.CodeFormatAgent},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,System.String}}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}})">
+<member name="M:FSharp.Literate.Literate.ProcessMarkdown(System.String,Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.OutputKind},Microsoft.FSharp.Core.FSharpOption{FSharp.CodeFormat.CodeFormatAgent},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,System.String}}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}},Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
 <summary>
  Process Markdown document
 </summary>
 </member>
-<member name="M:FSharp.Literate.Literate.ProcessDirectory(System.String,Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.OutputKind},Microsoft.FSharp.Core.FSharpOption{FSharp.CodeFormat.CodeFormatAgent},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.IFsiEvaluator},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,System.String}}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}})">
+<member name="M:FSharp.Literate.Literate.ProcessDirectory(System.String,Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.OutputKind},Microsoft.FSharp.Core.FSharpOption{FSharp.CodeFormat.CodeFormatAgent},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.IFsiEvaluator},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,System.String}}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}},Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
 <summary>
  Process directory containing a mix of Markdown documents and F# Script files
 </summary>
@@ -507,6 +507,9 @@
 <summary>
  Defines the two possible output types from literate script: HTML and LaTeX.
 </summary>
+</member>
+<member name="">
+
 </member>
 <member name="">
 
@@ -823,12 +826,12 @@
  entire source code of the specified document (with possible `fsx` formatting)
 </summary>
 </member>
-<member name="M:FSharp.Literate.Formatting.findHeadings(System.Collections.Generic.IEnumerable{FSharp.Markdown.MarkdownParagraph},FSharp.Literate.OutputKind)">
+<member name="M:FSharp.Literate.Formatting.findHeadings(System.Collections.Generic.IEnumerable{FSharp.Markdown.MarkdownParagraph},System.Boolean,FSharp.Literate.OutputKind)">
 <summary>
  Try find first-level heading in the paragraph collection
 </summary>
 </member>
-<member name="M:FSharp.Literate.Formatting.format(FSharp.Markdown.MarkdownDocument,FSharp.Literate.OutputKind)">
+<member name="M:FSharp.Literate.Formatting.format(FSharp.Markdown.MarkdownDocument,System.Boolean,FSharp.Literate.OutputKind)">
 <summary>
  Format document with the specified output kind
 </summary>
