@@ -179,6 +179,15 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
 <member name="T:FSharp.MetadataFormat.Html">
 <summary>
  For use in the tempaltes (lives in namespace FSharp.MetadataFormat)
@@ -350,15 +359,16 @@
  Dynamic object with more properties (?)
 </summary>
 </member>
-<member name="F:FSharp.MetadataFormat.RazorRender.Model@">
-<summary>
- Model - whatever the user specifies for the page
-</summary>
-</member>
 <member name="F:FSharp.MetadataFormat.RazorRender.Resolver@">
 <summary>
  Global resolver (for use in &apos;DocPageTempalateBase&apos;)
 </summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
 </member>
 <member name="P:FSharp.MetadataFormat.RazorRender.ViewBag(RazorEngine.Templating.DynamicViewBag)">
 <summary>
@@ -370,32 +380,62 @@
  Global resolver (for use in &apos;DocPageTempalateBase&apos;)
 </summary>
 </member>
-<member name="P:FSharp.MetadataFormat.RazorRender.Model(System.Object)">
-<summary>
- Model - whatever the user specifies for the page
-</summary>
-</member>
 <member name="P:FSharp.MetadataFormat.RazorRender.ViewBag">
 <summary>
  Dynamic object with more properties (?)
 </summary>
+</member>
+<member name="">
+
 </member>
 <member name="P:FSharp.MetadataFormat.RazorRender.Resolver">
 <summary>
  Global resolver (for use in &apos;DocPageTempalateBase&apos;)
 </summary>
 </member>
-<member name="P:FSharp.MetadataFormat.RazorRender.Model">
-<summary>
- Model - whatever the user specifies for the page
-</summary>
+<member name="">
+
+</member>
+<member name="">
+
 </member>
 <member name="M:FSharp.MetadataFormat.RazorRender.Resolve(System.Collections.Generic.IEnumerable{System.String},System.String)">
 <summary>
  Find file in one of the specified layout roots
 </summary>
 </member>
-<member name="M:FSharp.MetadataFormat.RazorRender.ProcessFile``1(System.String,Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,``0}}})">
+<member name="M:FSharp.MetadataFormat.RazorRender.ProcessFileParseModel``1(System.Object,Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,``0}}})">
+<summary>
+ Process source file and return result as a string
+</summary>
+</member>
+<member name="M:FSharp.MetadataFormat.RazorRender.ProcessFileParse``1(Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,``0}}})">
+<summary>
+ Process source file and return result as a string
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.MetadataFormat.RazorRender`1.ProcessFileParse``1(`0,Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,``0}}})">
 <summary>
  Process source file and return result as a string
 </summary>
