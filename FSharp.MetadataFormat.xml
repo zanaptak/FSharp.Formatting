@@ -354,15 +354,22 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
 <member name="F:FSharp.MetadataFormat.RazorRender.ViewBag@">
 <summary>
  Dynamic object with more properties (?)
 </summary>
 </member>
-<member name="F:FSharp.MetadataFormat.RazorRender.Resolver@">
-<summary>
- Global resolver (for use in &apos;DocPageTempalateBase&apos;)
-</summary>
+<member name="">
+
 </member>
 <member name="">
 
@@ -375,11 +382,6 @@
  Dynamic object with more properties (?)
 </summary>
 </member>
-<member name="P:FSharp.MetadataFormat.RazorRender.Resolver(RazorEngine.Templating.ITemplateResolver)">
-<summary>
- Global resolver (for use in &apos;DocPageTempalateBase&apos;)
-</summary>
-</member>
 <member name="P:FSharp.MetadataFormat.RazorRender.ViewBag">
 <summary>
  Dynamic object with more properties (?)
@@ -388,32 +390,28 @@
 <member name="">
 
 </member>
-<member name="P:FSharp.MetadataFormat.RazorRender.Resolver">
-<summary>
- Global resolver (for use in &apos;DocPageTempalateBase&apos;)
-</summary>
-</member>
 <member name="">
 
 </member>
 <member name="">
 
 </member>
-<member name="M:FSharp.MetadataFormat.RazorRender.Resolve(System.Collections.Generic.IEnumerable{System.String},System.String)">
+<member name="">
+
+</member>
+<member name="M:FSharp.MetadataFormat.RazorRender.TryResolve(System.Collections.Generic.IEnumerable{System.String},System.String)">
 <summary>
  Find file in one of the specified layout roots
 </summary>
+</member>
+<member name="">
+
 </member>
 <member name="M:FSharp.MetadataFormat.RazorRender.ProcessFileParseModel``1(System.Object,Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,``0}}})">
 <summary>
  Process source file and return result as a string
 </summary>
 </member>
-<member name="M:FSharp.MetadataFormat.RazorRender.ProcessFileParse``1(Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,``0}}})">
-<summary>
- Process source file and return result as a string
-</summary>
-</member>
 <member name="">
 
 </member>
@@ -434,11 +432,6 @@
 </member>
 <member name="">
 
-</member>
-<member name="M:FSharp.MetadataFormat.RazorRender`1.ProcessFileParse``1(`0,Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,``0}}})">
-<summary>
- Process source file and return result as a string
-</summary>
 </member>
 <member name="">
 
