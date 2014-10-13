@@ -967,6 +967,11 @@
  or simple Html engine with {replacements} to format the document
 </summary>
 </member>
+<member name="P:FSharp.Literate.Templating.razorCache">
+<summary>
+ Very basic and simple caching mechanism for RazorRender instances.
+</summary>
+</member>
 <member name="M:FSharp.Literate.Templating.replaceParameters(System.String,System.Collections.Generic.IEnumerable{System.Tuple{System.String,System.String}},Microsoft.FSharp.Core.FSharpOption{System.String})">
 <summary>
  Replace {parameter} in the input string with 
