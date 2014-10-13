@@ -217,6 +217,9 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
 <member name="P:FSharp.Literate.FsiEvaluator.EvaluationFailed">
 <summary>
  This event is fired whenever an evaluation of an expression fails
@@ -594,7 +597,7 @@
 <member name="">
 
 </member>
-<member name="M:FSharp.Literate.RazorRender.Resolve(System.Collections.Generic.IEnumerable{System.String},System.String)">
+<member name="M:FSharp.Literate.RazorRender.Resolve(System.String[],System.String)">
 <summary>
  Find file in one of the specified layout roots
 </summary>

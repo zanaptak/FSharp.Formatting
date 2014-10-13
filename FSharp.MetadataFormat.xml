@@ -399,7 +399,7 @@
 <member name="">
 
 </member>
-<member name="M:FSharp.MetadataFormat.RazorRender.Resolve(System.Collections.Generic.IEnumerable{System.String},System.String)">
+<member name="M:FSharp.MetadataFormat.RazorRender.Resolve(System.String[],System.String)">
 <summary>
  Find file in one of the specified layout roots
 </summary>
