@@ -357,12 +357,12 @@
 <member name="">
 
 </member>
-<member name="F:FSharp.MetadataFormat.RazorRender.ViewBag@">
+<member name="F:FSharp.MetadataFormat.FSharp.MetadataFormat.RazorRender.ViewBag@">
 <summary>
  Dynamic object with more properties (?)
 </summary>
 </member>
-<member name="F:FSharp.MetadataFormat.RazorRender.Resolver@">
+<member name="F:FSharp.MetadataFormat.FSharp.MetadataFormat.RazorRender.Resolver@">
 <summary>
  Global resolver (for use in &apos;DocPageTempalateBase&apos;)
 </summary>
