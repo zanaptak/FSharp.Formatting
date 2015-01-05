@@ -54,6 +54,12 @@
  every element. Between each two elements, the second function is called.
 </summary>
 </member>
+<member name="M:FSharp.Collections.List.partitionUntilLookahead``1(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Collections.FSharpList{``0},System.Boolean},Microsoft.FSharp.Collections.FSharpList{``0})">
+<summary>
+ Partitions list into an initial sequence (while the 
+ specified predicate returns &apos;false&apos;) and a rest of the list.
+</summary>
+</member>
 <member name="M:FSharp.Collections.List.partitionUntil``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},Microsoft.FSharp.Collections.FSharpList{``0})">
 <summary>
  Partitions list into an initial sequence (while the 
@@ -357,12 +363,12 @@
 <member name="">
 
 </member>
-<member name="F:FSharp.MetadataFormat.FSharp.MetadataFormat.RazorRender.ViewBag@">
+<member name="F:FSharp.MetadataFormat.RazorRender.ViewBag@">
 <summary>
  Dynamic object with more properties (?)
 </summary>
 </member>
-<member name="F:FSharp.MetadataFormat.FSharp.MetadataFormat.RazorRender.Resolver@">
+<member name="F:FSharp.MetadataFormat.RazorRender.Resolver@">
 <summary>
  Global resolver (for use in &apos;DocPageTempalateBase&apos;)
 </summary>
