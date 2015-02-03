@@ -61,9 +61,6 @@
 <member name="">
 
 </member>
-<member name="">
-
-</member>
 <member name="M:FSharp.CodeFormat.CodeFormatAgent.ParseSourceAsync(System.String,System.String,System.String,System.String)">
 <summary>
  Parse the source code specified by &apos;source&apos;, assuming that it
@@ -149,6 +146,36 @@
 <summary>
  Represents an indivudal formatted snippet with title
 </summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
 </member>
 <member name="">
 
