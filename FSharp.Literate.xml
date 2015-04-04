@@ -8,6 +8,8 @@
 <member name="T:FSharp.Collections.Tree`1">
 <summary>
  Represents a tree with nodes containing values an a list of children
+
+ [omit]
 </summary>
 </member>
 <member name="M:FSharp.Collections.Tree.ofIndentedList``1(Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.Int32,``0}})">
@@ -27,7 +29,9 @@
 </summary>
 </member>
 <member name="T:FSharp.Collections.Tree">
-
+<summary>
+ [omit]
+</summary>
 </member>
 <member name="M:FSharp.Collections.List.nestUnderLastMatching``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},Microsoft.FSharp.Collections.FSharpList{``0})">
 <summary>
@@ -96,7 +100,9 @@
 </summary>
 </member>
 <member name="T:FSharp.Collections.List">
-
+<summary>
+ [omit]
+</summary>
 </member>
 <member name="">
 
@@ -149,8 +155,10 @@
 <member name="">
 
 </member>
-<member name="">
-
+<member name="T:FSharp.Literate.DocPageTemplateBase`1">
+<summary>
+ [omit]
+</summary>
 </member>
 <member name="">
 
@@ -272,8 +280,10 @@
 <member name="">
 
 </member>
-<member name="">
-
+<member name="T:FSharp.Literate.GetMemberBinderImpl">
+<summary>
+ [omit]
+</summary>
 </member>
 <member name="T:FSharp.Literate.IFsiEvaluationResult">
 <summary>
@@ -377,8 +387,12 @@
  Use (*** do-not-eval ***) command to set this to `false`
 </summary>
 </member>
-<member name="">
-
+<member name="T:FSharp.Literate.LiterateCodeOptions">
+<summary>
+ Additional properties of a literate code snippet, embedded in a
+ `LiterateParagraph.LiterateCode`. The properties specify how should
+ a snippet be evaluated and formatted.
+</summary>
 </member>
 <member name="">
 
@@ -389,8 +403,11 @@
 <member name="">
 
 </member>
-<member name="">
-
+<member name="T:FSharp.Literate.LiterateCodeVisibility">
+<summary>
+ Specifies visibility of a code snippet. This can be either ordinary
+ visible code, hidden snippet or named snippet with captured output.
+</summary>
 </member>
 <member name="">
 
@@ -508,8 +525,12 @@
 <member name="">
 
 </member>
-<member name="">
-
+<member name="T:FSharp.Literate.LiterateParagraph">
+<summary>
+ Extends `MarkdownParagrap` using the `MarkdownEmbedParagraphs` case with
+ additional kinds of paragraphs that can appear in literate F# scripts
+ (such as various special commands to embed output of a snippet etc.)
+</summary>
 </member>
 <member name="">
 
@@ -517,8 +538,11 @@
 <member name="">
 
 </member>
-<member name="">
-
+<member name="T:FSharp.Literate.LiterateSource">
+<summary>
+ Represents the source of a literate document. This is esither Markdown (as a `string`)
+ or parsed F# script file consisting of snippets.
+</summary>
 </member>
 <member name="">
 
@@ -587,9 +611,24 @@
 <member name="">
 
 </member>
-<member name="M:FSharp.Literate.RazorRender.TryResolve(System.Collections.Generic.IEnumerable{System.String},System.String)">
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Literate.RazorRender">
 <summary>
- Find file in one of the specified layout roots
+ [omit]
 </summary>
 </member>
 <member name="">
@@ -598,29 +637,10 @@
 <member name="">
 
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
+<member name="T:FSharp.Literate.RazorRender`1">
+<summary>
+ [omit]
+</summary>
 </member>
 <member name="">
 
@@ -636,8 +656,10 @@
 <member name="">
 
 </member>
-<member name="">
-
+<member name="T:FSharp.Literate.StringDictionary">
+<summary>
+ [omit]
+</summary>
 </member>
 <member name="">
 
@@ -836,7 +858,9 @@
 </summary>
 </member>
 <member name="T:FSharp.Literate.EvaluatorHelpers">
-
+<summary>
+ [omit]
+</summary>
 </member>
 <member name="M:FSharp.Literate.Formatting.getSourceDocument(FSharp.Literate.LiterateDocument)">
 <summary>
@@ -898,7 +922,10 @@
 
 </member>
 <member name="T:FSharp.Literate.Matching">
-
+<summary>
+ Provides active patterns for extracting `LiterateParagraph` values from
+ Markdown documents.
+</summary>
 </member>
 <member name="M:FSharp.Literate.Parallel.pfor``2(System.Collections.Generic.IEnumerable{``0},Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,``1},Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{System.Threading.Tasks.ParallelLoopState,Microsoft.FSharp.Core.FSharpFunc{``1,``1}}})">
 <summary>
@@ -939,15 +966,36 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
+<member name="P:FSharp.Literate.RazorEngineCache.razorCache">
+<summary>
+ Caching mechanism for IRazorEngineService instances.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharp.Literate.RazorEngineCache.tryResolve(System.Collections.Generic.IEnumerable{System.String},System.String)">
+<summary>
+ Find file in one of the specified layout roots
+</summary>
+</member>
+<member name="T:FSharp.Literate.RazorEngineCache">
+<summary>
+ A simple RazorEngine caching strategy, this implementation assumes that the current directory never changes.
+
+ [omit]
+</summary>
+</member>
+<member name="">
+
+</member>
 <member name="M:FSharp.Literate.Templating.generateFile(Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}},System.String,System.Collections.Generic.IEnumerable{System.Tuple{System.String,System.String}},Microsoft.FSharp.Core.FSharpOption{System.String},System.String,System.Collections.Generic.IEnumerable{System.String})">
 <summary>
  Depending on the template file, use either Razor engine
  or simple Html engine with {replacements} to format the document
-</summary>
-</member>
-<member name="P:FSharp.Literate.Templating.razorCache">
-<summary>
- Very basic and simple caching mechanism for RazorRender instances.
 </summary>
 </member>
 <member name="M:FSharp.Literate.Templating.replaceParameters(System.String,System.Collections.Generic.IEnumerable{System.Tuple{System.String,System.String}},Microsoft.FSharp.Core.FSharpOption{System.String})">

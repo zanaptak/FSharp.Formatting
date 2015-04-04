@@ -96,8 +96,10 @@
 <member name="">
 
 </member>
-<member name="">
-
+<member name="T:FSharp.CodeFormat.ErrorKind">
+<summary>
+ Represents a kind of error reported from the F# compiler (warning or error)
+</summary>
 </member>
 <member name="">
 
@@ -150,8 +152,42 @@
 <member name="">
 
 </member>
+<member name="T:FSharp.CodeFormat.Line">
+<summary>
+ Represents a line of source code as a list of `TokenSpan` values. This is
+ a single case discriminated union with `Line` constructor.
+</summary>
+</member>
 <member name="">
 
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.CodeFormat.Snippet">
+<summary>
+ An F# snippet consists of a snippet title and a list of lines
+ (wrapped in a single case discriminated union with `Snippet` constructor)
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.CodeFormat.SourceError">
+<summary>
+ Error reported from the F# compiler consists of location (start and end),
+ error kind and the message (wrapped in a single case discriminated union
+ with constructor `SourceError`)
+</summary>
 </member>
 <member name="">
 
@@ -198,8 +234,12 @@
 <member name="">
 
 </member>
-<member name="">
-
+<member name="T:FSharp.CodeFormat.TokenKind">
+<summary>
+ Classifies tokens reported by the F# lexer and F# PowerTools 
+ (PowerTools provide additional information e.g. whether a variable
+ is mutable, etc.)
+</summary>
 </member>
 <member name="">
 
@@ -213,8 +253,18 @@
 <member name="">
 
 </member>
-<member name="">
-
+<member name="T:FSharp.CodeFormat.TokenSpan">
+<summary>
+ A token in a parsed F# code snippet. Aside from standard tokens reported from
+ the compiler (`Token`), this also includes `Error` (wrapping the underlined
+ tokens), `Omitted` for the special `[omit:...]` tags and `Output` for the special
+ `[output:...]` tag
+</summary>
+</member>
+<member name="T:FSharp.CodeFormat.TokenSpans">
+<summary>
+ A type alias representing a list of `TokenSpan` values
+</summary>
 </member>
 <member name="">
 
@@ -225,38 +275,15 @@
 <member name="">
 
 </member>
-<member name="">
-
+<member name="T:FSharp.CodeFormat.ToolTipSpan">
+<summary>
+ A tool tip span can be emphasized text, plain text `Literal` or a line brak
+</summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
+<member name="T:FSharp.CodeFormat.ToolTipSpans">
+<summary>
+ A tool tip consists of a list of items reported from the compiler
+</summary>
 </member>
 <member name="">
 
@@ -492,6 +519,8 @@
 <member name="T:FSharp.Collections.Tree`1">
 <summary>
  Represents a tree with nodes containing values an a list of children
+
+ [omit]
 </summary>
 </member>
 <member name="M:FSharp.Collections.Tree.ofIndentedList``1(Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.Int32,``0}})">
@@ -511,7 +540,9 @@
 </summary>
 </member>
 <member name="T:FSharp.Collections.Tree">
-
+<summary>
+ [omit]
+</summary>
 </member>
 <member name="M:FSharp.Collections.List.nestUnderLastMatching``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},Microsoft.FSharp.Collections.FSharpList{``0})">
 <summary>
@@ -580,7 +611,9 @@
 </summary>
 </member>
 <member name="T:FSharp.Collections.List">
-
+<summary>
+ [omit]
+</summary>
 </member>
 <member name="M:FSharp.Patterns.|Command|_|``2(``0,System.Collections.Generic.IDictionary{``0,``1})">
 <summary>

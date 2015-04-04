@@ -8,6 +8,8 @@
 <member name="T:FSharp.Collections.Tree`1">
 <summary>
  Represents a tree with nodes containing values an a list of children
+
+ [omit]
 </summary>
 </member>
 <member name="M:FSharp.Collections.Tree.ofIndentedList``1(Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.Int32,``0}})">
@@ -27,7 +29,9 @@
 </summary>
 </member>
 <member name="T:FSharp.Collections.Tree">
-
+<summary>
+ [omit]
+</summary>
 </member>
 <member name="M:FSharp.Collections.List.nestUnderLastMatching``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},Microsoft.FSharp.Collections.FSharpList{``0})">
 <summary>
@@ -96,7 +100,9 @@
 </summary>
 </member>
 <member name="T:FSharp.Collections.List">
-
+<summary>
+ [omit]
+</summary>
 </member>
 <member name="M:FSharp.Markdown.Markdown.WriteLatex(FSharp.Markdown.MarkdownDocument,System.IO.TextWriter)">
 <summary>
@@ -223,8 +229,10 @@
 <member name="">
 
 </member>
-<member name="">
-
+<member name="T:FSharp.Markdown.MarkdownColumnAlignment">
+<summary>
+ Column in a table can be aligned to left, right, center or using the default alignment
+</summary>
 </member>
 <member name="">
 
@@ -254,8 +262,76 @@
 <member name="">
 
 </member>
+<member name="T:FSharp.Markdown.MarkdownEmbedParagraphs">
+<summary>
+ Provides an extensibility point for adding custom kinds of paragraphs into a document
+ (`MarkdownEmbedParagraphs` values can be embedded using `MarkdownParagraph.EmbedParagraphs`)
+</summary>
+</member>
 <member name="">
 
+</member>
+<member name="T:FSharp.Markdown.MarkdownEmbedSpans">
+<summary>
+ Provides an extensibility point for adding custom kinds of spans into a document
+ (`MarkdownEmbedSpans` values can be embedded using `MarkdownSpan.EmbedSpans`)
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Markdown.MarkdownListKind">
+<summary>
+ A list kind can be `Ordered` or `Unordered` corresponding to `&lt;ol&gt;` and `&lt;ul&gt;` elements
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Markdown.MarkdownParagraph">
+<summary>
+ A paragraph represents a (possibly) multi-line element of a Markdown document.
+ Paragraphs are headings, inline paragraphs, code blocks, lists, quotations, tables and
+ also embedded LaTeX blocks.
+</summary>
+</member>
+<member name="T:FSharp.Markdown.MarkdownParagraphs">
+<summary>
+ A type alias for a list of paragraphs
+</summary>
 </member>
 <member name="">
 
@@ -296,68 +372,21 @@
 <member name="">
 
 </member>
-<member name="">
-
+<member name="T:FSharp.Markdown.MarkdownSpan">
+<summary>
+ Represents inline formatting inside a paragraph. This can be literal (with text), various
+ formattings (string, emphasis, etc.), hyperlinks, images, inline maths etc.
+</summary>
 </member>
-<member name="">
-
+<member name="T:FSharp.Markdown.MarkdownSpans">
+<summary>
+ A type alias for a list of `MarkdownSpan` values
+</summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
+<member name="T:FSharp.Markdown.MarkdownTableRow">
+<summary>
+ A type alias representing table row as a list of paragraphs
+</summary>
 </member>
 <member name="">
 
@@ -460,7 +489,9 @@
 </summary>
 </member>
 <member name="T:FSharp.Markdown.Html">
-
+<summary>
+ [omit]
+</summary>
 </member>
 <member name="">
 
@@ -528,7 +559,9 @@
 </summary>
 </member>
 <member name="T:FSharp.Markdown.Latex">
-
+<summary>
+ [omit]
+</summary>
 </member>
 <member name="">
 
@@ -582,7 +615,10 @@
 
 </member>
 <member name="T:FSharp.Markdown.Matching">
-
+<summary>
+ This module provides an easy way of processing Markdown documents.
+ It lets you decompose documents into leafs and nodes with nested paragraphs.
+</summary>
 </member>
 <member name="">
 
