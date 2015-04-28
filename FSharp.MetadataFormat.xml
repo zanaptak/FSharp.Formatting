@@ -296,12 +296,12 @@
 <member name="">
 
 </member>
-<member name="M:FSharp.MetadataFormat.MetadataFormat.Generate(Microsoft.FSharp.Collections.FSharpList{System.String},System.String,Microsoft.FSharp.Collections.FSharpList{System.String},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,System.String}}},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Uri,Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Int32,System.String}}}},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}})">
+<member name="M:FSharp.MetadataFormat.MetadataFormat.Generate``1(Microsoft.FSharp.Collections.FSharpList{System.String},System.String,Microsoft.FSharp.Collections.FSharpList{System.String},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,System.String}}},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{``0}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Uri,Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Int32,System.String}}}},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}})">
 <summary>
  This overload generates documentation for multiple files specified by the `dllFiles` parameter
 </summary>
 </member>
-<member name="M:FSharp.MetadataFormat.MetadataFormat.Generate(System.String,System.String,Microsoft.FSharp.Collections.FSharpList{System.String},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,System.String}}},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Uri,Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Int32,System.String}}}},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}})">
+<member name="M:FSharp.MetadataFormat.MetadataFormat.Generate``1(System.String,System.String,Microsoft.FSharp.Collections.FSharpList{System.String},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,System.String}}},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{``0}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Uri,Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Int32,System.String}}}},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}})">
 <summary>
  This overload generates documentation for a single file specified by the `dllFile` parameter
 </summary>
@@ -1073,6 +1073,640 @@
 
 </member>
 <member name="T:System.AssemblyVersionInformation">
+
+</member>
+<member name="M:Yaaf.FSharp.Scripting.ScriptHost.CreateNew(Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}},Microsoft.FSharp.Core.FSharpOption{System.Object},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.IO.TextWriter},Microsoft.FSharp.Core.FSharpOption{System.IO.TextWriter},Microsoft.FSharp.Core.FSharpOption{System.IO.TextWriter},Microsoft.FSharp.Core.FSharpOption{System.IO.TextWriter},Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
+<summary>
+ Quickly create a new IFsiSession with some sane defaults
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:Yaaf.FSharp.Scripting.ScriptHost.Create(Yaaf.FSharp.Scripting.FsiOptions,Microsoft.FSharp.Core.FSharpOption{System.Object},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.IO.TextWriter},Microsoft.FSharp.Core.FSharpOption{System.IO.TextWriter},Microsoft.FSharp.Core.FSharpOption{System.IO.TextWriter},Microsoft.FSharp.Core.FSharpOption{System.IO.TextWriter},Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
+<summary>
+ Create a new IFsiSession by specifying all fsi arguments manually. 
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="F:Yaaf.FSharp.Scripting.Yaaf.FSharp.Scripting.FsiOptions.WarnLevel">
+<summary>
+ Sets a warning level (0 to 5). The default level is 3. Each warning is given a level based on its severity. Level 5 gives more, but less severe, warnings than level 1.
+ Level 5 warnings are: 21 (recursive use checked at runtime), 22 (let rec evaluated out of order), 45 (full abstraction), and 52 (defensive copy). All other warnings are level 2.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="P:Yaaf.FSharp.Scripting.FsiOptions.Default">
+<summary>
+ Sets a warning level (0 to 5). The default level is 3. Each warning is given a level based on its severity. Level 5 gives more, but less severe, warnings than level 1.
+ Level 5 warnings are: 21 (recursive use checked at runtime), 22 (let rec evaluated out of order), 45 (full abstraction), and 52 (defensive copy). All other warnings are level 2.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:Yaaf.FSharp.Scripting.FsiOptions">
+<summary>
+ See https://msdn.microsoft.com/en-us/library/dd233172.aspx
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:Yaaf.FSharp.Scripting.IFsiSession.TryEvalExpressionWithOutput(System.String)">
+<summary>
+ Try to evaluate the given expression and return its result.
+</summary>
+</member>
+<member name="M:Yaaf.FSharp.Scripting.IFsiSession.EvalScriptWithOutput(System.String)">
+<summary>
+ Evaluate the given script.
+</summary>
+</member>
+<member name="M:Yaaf.FSharp.Scripting.IFsiSession.EvalInteractionWithOutput(System.String)">
+<summary>
+ Evaluate the given interaction.
+</summary>
+</member>
+<member name="T:Yaaf.FSharp.Scripting.IFsiSession">
+<summary>
+ Represents a simple F# interactive session.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Yaaf.FSharp.Scripting.FsiEvaluationException">
+<summary>
+ This exception indicates that an exception happened while compiling or executing given F# code.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Yaaf.FSharp.Scripting.Helper">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Yaaf.FSharp.Scripting.ArgParser">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Yaaf.FSharp.Scripting.Shell.InteractiveSettings">
+<summary>
+ Implements a simple &apos;fsi&apos; object to be passed to the FSI evaluator
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Yaaf.FSharp.Scripting.Shell.SimpleEventLoop">
+<summary>
+ Represents a simple (fake) event loop for the &apos;fsi&apos; object
+</summary>
+</member>
+<member name="T:Yaaf.FSharp.Scripting.Shell">
+
+</member>
+<member name="M:Yaaf.FSharp.Scripting.Extensions.IFsiSession.WithCurrentDirectory``1(Yaaf.FSharp.Scripting.IFsiSession,System.String,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,``0})">
+<summary>
+ Same as ChangeCurrentDirectory but takes a function for the scope.
+</summary>
+</member>
+<member name="M:Yaaf.FSharp.Scripting.Extensions.IFsiSession.ChangeCurrentDirectory(Yaaf.FSharp.Scripting.IFsiSession,System.String)">
+<summary>
+ Change the current directory (so that relative paths within scripts work properly).
+ Returns a handle to change the current directory back to it&apos;s initial state 
+ (Because this will change the current directory of the currently running code as well!).
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:Yaaf.FSharp.Scripting.Extensions.IFsiSession.Let``1(Yaaf.FSharp.Scripting.IFsiSession,System.String,``0)">
+<summary>
+ Assigns the given object to the given name (ie &quot;let varName = obj&quot;) 
+</summary>
+</member>
+<member name="M:Yaaf.FSharp.Scripting.Extensions.IFsiSession.EvalExpression``1(Yaaf.FSharp.Scripting.IFsiSession,System.String)">
+<summary>
+ Evaluate the given expression and return its result.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Yaaf.FSharp.Scripting.Extensions">
+
+</member>
+<member name="M:Yaaf.FSharp.Scripting.CompilerServiceExtensions.Type.get_FSharpFullNameWithTypeArgs(System.Type)">
+<summary>
+ Gets a string that can be used in F# source code to reference the current type instance.
+</summary>
+</member>
+<member name="M:Yaaf.FSharp.Scripting.CompilerServiceExtensions.Type.get_FSharpParamList(System.Type)">
+<summary>
+ The parameter list of the current type, sets &quot;_&quot; if the current instance is a generic definition.
+</summary>
+</member>
+<member name="M:Yaaf.FSharp.Scripting.CompilerServiceExtensions.Type.get_FSharpFullName(System.Type)">
+<summary>
+ Gets the FullName of the current type in F# source code.
+</summary>
+</member>
+<member name="M:Yaaf.FSharp.Scripting.CompilerServiceExtensions.Type.get_FSharpName(System.Type)">
+<summary>
+ The name of the current type instance in F# source code.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:Yaaf.FSharp.Scripting.CompilerServiceExtensions.Type.get_NamespaceName(System.Type)">
+<summary>
+ The FullName but without any generic parameter types.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:Yaaf.FSharp.Scripting.CompilerServiceExtensions.TypeParamHelper">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Yaaf.FSharp.Scripting.CompilerServiceExtensions.TypeNameHelper">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Yaaf.FSharp.Scripting.CompilerServiceExtensions.FSharpAssemblyHelper">
+
+</member>
+<member name="T:Yaaf.FSharp.Scripting.CompilerServiceExtensions">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Yaaf.FSharp.Scripting.Env">
 
 </member>
 </members>
