@@ -296,12 +296,12 @@
 <member name="">
 
 </member>
-<member name="M:FSharp.MetadataFormat.MetadataFormat.Generate``1(Microsoft.FSharp.Collections.FSharpList{System.String},System.String,Microsoft.FSharp.Collections.FSharpList{System.String},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,System.String}}},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{``0}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Uri,Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Int32,System.String}}}},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}})">
+<member name="M:FSharp.MetadataFormat.MetadataFormat.Generate(Microsoft.FSharp.Collections.FSharpList{System.String},System.String,Microsoft.FSharp.Collections.FSharpList{System.String},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,System.String}}},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Uri,Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Int32,System.String}}}},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}})">
 <summary>
  This overload generates documentation for multiple files specified by the `dllFiles` parameter
 </summary>
 </member>
-<member name="M:FSharp.MetadataFormat.MetadataFormat.Generate``1(System.String,System.String,Microsoft.FSharp.Collections.FSharpList{System.String},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,System.String}}},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{``0}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Uri,Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Int32,System.String}}}},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}})">
+<member name="M:FSharp.MetadataFormat.MetadataFormat.Generate(System.String,System.String,Microsoft.FSharp.Collections.FSharpList{System.String},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,System.String}}},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Uri,Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Int32,System.String}}}},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}})">
 <summary>
  This overload generates documentation for a single file specified by the `dllFile` parameter
 </summary>
@@ -1089,8 +1089,13 @@
  Quickly create a new IFsiSession with some sane defaults
 </summary>
 </member>
-<member name="">
-
+<member name="M:Yaaf.FSharp.Scripting.ScriptHost.CreateForwardWriter(Microsoft.FSharp.Core.FSharpFunc{System.String,Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
+<summary>
+ Creates a forwarder Textwriter, which forwards all output to the given function.
+ Set revertRedirect only to &quot;false&quot; if you know that f doesn&apos;t print anything to the stdout.
+ When revertRedirect is true we capture the Console.Out property and set it before calling f.
+ RemoveNewLines
+</summary>
 </member>
 <member name="M:Yaaf.FSharp.Scripting.ScriptHost.Create(Yaaf.FSharp.Scripting.FsiOptions,Microsoft.FSharp.Core.FSharpOption{System.Object},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.IO.TextWriter},Microsoft.FSharp.Core.FSharpOption{System.IO.TextWriter},Microsoft.FSharp.Core.FSharpOption{System.IO.TextWriter},Microsoft.FSharp.Core.FSharpOption{System.IO.TextWriter},Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
 <summary>
@@ -1278,10 +1283,48 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Yaaf.FSharp.Scripting.FsiExpressionTypeException">
+<summary>
+ Exception for invalid expression types
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
 <member name="T:Yaaf.FSharp.Scripting.FsiEvaluationException">
 <summary>
  This exception indicates that an exception happened while compiling or executing given F# code.
 </summary>
+</member>
+<member name="">
+
 </member>
 <member name="">
 
@@ -1566,6 +1609,11 @@
 <member name="T:Yaaf.FSharp.Scripting.Shell">
 
 </member>
+<member name="M:Yaaf.FSharp.Scripting.Extensions.IFsiSession.Handle``1(Yaaf.FSharp.Scripting.IFsiSession,Microsoft.FSharp.Core.FSharpFunc{System.String,``0},System.String)">
+<summary>
+ Handle the given evaluation function
+</summary>
+</member>
 <member name="M:Yaaf.FSharp.Scripting.Extensions.IFsiSession.WithCurrentDirectory``1(Yaaf.FSharp.Scripting.IFsiSession,System.String,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,``0})">
 <summary>
  Same as ChangeCurrentDirectory but takes a function for the scope.
@@ -1577,6 +1625,9 @@
  Returns a handle to change the current directory back to it&apos;s initial state 
  (Because this will change the current directory of the currently running code as well!).
 </summary>
+</member>
+<member name="">
+
 </member>
 <member name="">
 
@@ -1700,16 +1751,19 @@
 <member name="">
 
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="T:Yaaf.FSharp.Scripting.CompilerServiceExtensions.FSharpAssemblyHelper">
 
 </member>
 <member name="T:Yaaf.FSharp.Scripting.CompilerServiceExtensions">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
 
 </member>
 <member name="">

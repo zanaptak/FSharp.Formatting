@@ -268,6 +268,21 @@
  A wrapper for F# interactive service that is used to evaluate inline snippets
 </summary>
 </member>
+<member name="M:FSharp.Literate.FsiEvaluatorConfig.CreateNoOpFsiObject">
+<summary>
+ Creates a dummy `fsi` object that does not affect the behaviour of F# Interactive
+ (and simply ignores all operations that are done on it). You can use this to 
+ e.g. disable registered printers that would open new windows etc.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Literate.FsiEvaluatorConfig">
+<summary>
+ Provides configuration options for the `FsiEvaluator`
+</summary>
+</member>
 <member name="">
 
 </member>
@@ -541,6 +556,154 @@
 <summary>
  Represents the source of a literate document. This is esither Markdown (as a `string`)
  or parsed F# script file consisting of snippets.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Literate.NoOpFsiEventLoop">
+<summary>
+ Represents a simple (fake) event loop for the &apos;fsi&apos; object
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharp.Literate.NoOpFsiObject">
+<summary>
+ Implements a simple &apos;fsi&apos; object to be passed to the FSI evaluator
 </summary>
 </member>
 <member name="">
@@ -1213,8 +1376,13 @@
  Quickly create a new IFsiSession with some sane defaults
 </summary>
 </member>
-<member name="">
-
+<member name="M:Yaaf.FSharp.Scripting.ScriptHost.CreateForwardWriter(Microsoft.FSharp.Core.FSharpFunc{System.String,Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
+<summary>
+ Creates a forwarder Textwriter, which forwards all output to the given function.
+ Set revertRedirect only to &quot;false&quot; if you know that f doesn&apos;t print anything to the stdout.
+ When revertRedirect is true we capture the Console.Out property and set it before calling f.
+ RemoveNewLines
+</summary>
 </member>
 <member name="M:Yaaf.FSharp.Scripting.ScriptHost.Create(Yaaf.FSharp.Scripting.FsiOptions,Microsoft.FSharp.Core.FSharpOption{System.Object},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.IO.TextWriter},Microsoft.FSharp.Core.FSharpOption{System.IO.TextWriter},Microsoft.FSharp.Core.FSharpOption{System.IO.TextWriter},Microsoft.FSharp.Core.FSharpOption{System.IO.TextWriter},Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
 <summary>
@@ -1402,10 +1570,48 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Yaaf.FSharp.Scripting.FsiExpressionTypeException">
+<summary>
+ Exception for invalid expression types
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
 <member name="T:Yaaf.FSharp.Scripting.FsiEvaluationException">
 <summary>
  This exception indicates that an exception happened while compiling or executing given F# code.
 </summary>
+</member>
+<member name="">
+
 </member>
 <member name="">
 
@@ -1690,6 +1896,11 @@
 <member name="T:Yaaf.FSharp.Scripting.Shell">
 
 </member>
+<member name="M:Yaaf.FSharp.Scripting.Extensions.IFsiSession.Handle``1(Yaaf.FSharp.Scripting.IFsiSession,Microsoft.FSharp.Core.FSharpFunc{System.String,``0},System.String)">
+<summary>
+ Handle the given evaluation function
+</summary>
+</member>
 <member name="M:Yaaf.FSharp.Scripting.Extensions.IFsiSession.WithCurrentDirectory``1(Yaaf.FSharp.Scripting.IFsiSession,System.String,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,``0})">
 <summary>
  Same as ChangeCurrentDirectory but takes a function for the scope.
@@ -1701,6 +1912,9 @@
  Returns a handle to change the current directory back to it&apos;s initial state 
  (Because this will change the current directory of the currently running code as well!).
 </summary>
+</member>
+<member name="">
+
 </member>
 <member name="">
 
@@ -1824,16 +2038,19 @@
 <member name="">
 
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="T:Yaaf.FSharp.Scripting.CompilerServiceExtensions.FSharpAssemblyHelper">
 
 </member>
 <member name="T:Yaaf.FSharp.Scripting.CompilerServiceExtensions">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
 
 </member>
 <member name="">
