@@ -28,6 +28,13 @@
  using the specified ID prefix and default settings.
 </summary>
 </member>
+<member name="M:FSharp.CodeFormat.CodeFormat.FormatHtml(FSharp.CodeFormat.Snippet[],System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean)">
+<summary>
+ Formats the snippets parsed using the CodeFormatAgent as HTML
+ The parameters specify prefix for HTML tags, whether lines should
+ be added to outputs and whether errors should be printed.
+</summary>
+</member>
 <member name="M:FSharp.CodeFormat.CodeFormat.FormatHtml(FSharp.CodeFormat.Snippet[],System.String,System.String,System.String,System.Boolean,System.Boolean)">
 <summary>
  Formats the snippets parsed using the CodeFormatAgent as HTML
@@ -380,6 +387,12 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
 <member name="T:FSharp.CodeFormat.Html.FormattingContext">
 <summary>
  Represents context used by the formatter
@@ -415,7 +428,7 @@
  Mutable type that formats tool tips and keeps the generated HTML
 </summary>
 </member>
-<member name="M:FSharp.CodeFormat.Html.format(System.Boolean,System.Boolean,System.String,System.String,System.String,FSharp.CodeFormat.Snippet[])">
+<member name="M:FSharp.CodeFormat.Html.format(System.Boolean,System.Boolean,System.String,System.String,System.String,System.String,System.String,FSharp.CodeFormat.Snippet[])">
 <summary>
  Format snippets and return HTML for &lt;pre&gt; tags together
  wtih HTML for ToolTips (to be added to the end of document)

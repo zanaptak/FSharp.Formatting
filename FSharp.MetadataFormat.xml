@@ -445,12 +445,21 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
 <member name="T:FSharp.MetadataFormat.PathTemplateKey">
 <summary>
  [omit]
 </summary>
 </member>
-<member name="F:FSharp.MetadataFormat.FSharp.MetadataFormat.RazorRender.ViewBag@">
+<member name="F:FSharp.MetadataFormat.RazorRender.ViewBag@">
 <summary>
  Dynamic object with more properties (?)
 </summary>
@@ -593,6 +602,23 @@
 <member name="">
 
 </member>
+<member name="T:FSharp.MetadataFormat.ExtensionMethods">
+<summary>
+ [omit]
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
 <member name="">
 
 </member>
@@ -635,6 +661,13 @@
 <member name="T:FSharp.MetadataFormat.PathHelper">
 <summary>
  [omit]
+</summary>
+</member>
+<member name="M:FSharp.MetadataFormat.RazorEngineCache.InvalidateCache(System.Collections.Generic.IEnumerable{System.String})">
+<summary>
+ Invalidates the given razor template files (does nothing for files which aren&apos;t already cached or unknown).
+ Use this API only when you know what you are doing. It leaks memory on every call, so you should only use this
+ In short lived applications or with an AppDomain recycle strategy in place.
 </summary>
 </member>
 <member name="">
@@ -1117,7 +1150,7 @@
 <member name="">
 
 </member>
-<member name="F:Yaaf.FSharp.Scripting.Yaaf.FSharp.Scripting.FsiOptions.WarnLevel">
+<member name="P:Yaaf.FSharp.Scripting.FsiOptions.WarnLevel">
 <summary>
  Sets a warning level (0 to 5). The default level is 3. Each warning is given a level based on its severity. Level 5 gives more, but less severe, warnings than level 1.
  Level 5 warnings are: 21 (recursive use checked at runtime), 22 (let rec evaluated out of order), 45 (full abstraction), and 52 (defensive copy). All other warnings are level 2.

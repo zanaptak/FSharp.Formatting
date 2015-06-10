@@ -213,7 +213,7 @@
  the generated console output together with a result and its static type.
 </summary>
 </member>
-<member name="F:FSharp.Literate.FSharp.Literate.FsiEvaluator.valueTransformations">
+<member name="F:FSharp.Literate.FsiEvaluator.valueTransformations">
 <summary>
  Registered transformations for pretty printing values
  (the default formats value as a string and emits single CodeBlock)
@@ -384,18 +384,18 @@
  (looking for `*.fsx` and `*.md` files).
 </summary>
 </member>
-<member name="F:FSharp.Literate.FSharp.Literate.LiterateCodeOptions.Visibility">
+<member name="P:FSharp.Literate.LiterateCodeOptions.Visibility">
 <summary>
  Specifies the visibility of the snippet in the generated HTML
 </summary>
 </member>
-<member name="F:FSharp.Literate.FSharp.Literate.LiterateCodeOptions.OutputName">
+<member name="P:FSharp.Literate.LiterateCodeOptions.OutputName">
 <summary>
  Specifies the name of the output produced by this snippet
  Use the (*** define-output:foo ***) command to set this value
 </summary>
 </member>
-<member name="F:FSharp.Literate.FSharp.Literate.LiterateCodeOptions.Evaluate">
+<member name="P:FSharp.Literate.LiterateCodeOptions.Evaluate">
 <summary>
  Specifies whether the snippet is evalauted while processing
  Use (*** do-not-eval ***) command to set this to `false`
@@ -790,7 +790,7 @@
  Specifies a context that is passed to functions that generate the output
 </summary>
 </member>
-<member name="F:FSharp.Literate.FSharp.Literate.RazorRender.ViewBag@">
+<member name="F:FSharp.Literate.RazorRender.ViewBag@">
 <summary>
  Dynamic object with more properties (?)
 </summary>
@@ -1027,6 +1027,13 @@
 <member name="T:FSharp.Literate.PathHelper">
 <summary>
  [omit]
+</summary>
+</member>
+<member name="M:FSharp.Literate.RazorEngineCache.InvalidateCache(System.Collections.Generic.IEnumerable{System.String})">
+<summary>
+ Invalidates the given razor template files (does nothing for files which aren&apos;t already cached or unknown).
+ Use this API only when you know what you are doing. It leaks memory on every call, so you should only use this
+ In short lived applications or with an AppDomain recycle strategy in place.
 </summary>
 </member>
 <member name="">
@@ -1404,7 +1411,7 @@
 <member name="">
 
 </member>
-<member name="F:Yaaf.FSharp.Scripting.Yaaf.FSharp.Scripting.FsiOptions.WarnLevel">
+<member name="P:Yaaf.FSharp.Scripting.FsiOptions.WarnLevel">
 <summary>
  Sets a warning level (0 to 5). The default level is 3. Each warning is given a level based on its severity. Level 5 gives more, but less severe, warnings than level 1.
  Level 5 warnings are: 21 (recursive use checked at runtime), 22 (let rec evaluated out of order), 45 (full abstraction), and 52 (defensive copy). All other warnings are level 2.
