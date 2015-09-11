@@ -2,9 +2,6 @@
 <doc>
 <assembly><name>FSharp.Markdown</name></assembly>
 <members>
-<member name="">
-
-</member>
 <member name="T:FSharp.Collections.Tree`1">
 <summary>
  Represents a tree with nodes containing values an a list of children
@@ -217,28 +214,10 @@
  and transforming Markdown documents.
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="T:FSharp.Markdown.MarkdownColumnAlignment">
 <summary>
  Column in a table can be aligned to left, right, center or using the default alignment
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="P:FSharp.Markdown.MarkdownDocument.Paragraphs">
 <summary>
@@ -250,17 +229,11 @@
  Returns a dictionary containing explicitly defined links
 </summary>
 </member>
-<member name="">
-
-</member>
 <member name="T:FSharp.Markdown.MarkdownDocument">
 <summary>
  Representation of a Markdown document - the representation of Paragraphs
  uses an F# discriminated union type and so is best used from F#.
 </summary>
-</member>
-<member name="">
-
 </member>
 <member name="T:FSharp.Markdown.MarkdownEmbedParagraphs">
 <summary>
@@ -268,58 +241,16 @@
  (`MarkdownEmbedParagraphs` values can be embedded using `MarkdownParagraph.EmbedParagraphs`)
 </summary>
 </member>
-<member name="">
-
-</member>
 <member name="T:FSharp.Markdown.MarkdownEmbedSpans">
 <summary>
  Provides an extensibility point for adding custom kinds of spans into a document
  (`MarkdownEmbedSpans` values can be embedded using `MarkdownSpan.EmbedSpans`)
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="T:FSharp.Markdown.MarkdownListKind">
 <summary>
  A list kind can be `Ordered` or `Unordered` corresponding to `&lt;ol&gt;` and `&lt;ul&gt;` elements
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="T:FSharp.Markdown.MarkdownParagraph">
 <summary>
@@ -332,45 +263,6 @@
 <summary>
  A type alias for a list of paragraphs
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="T:FSharp.Markdown.MarkdownSpan">
 <summary>
@@ -388,43 +280,10 @@
  A type alias representing table row as a list of paragraphs
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="T:FSharp.Markdown.Html.FormattingContext">
 <summary>
  Context passed around while formatting the HTML
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="T:FSharp.Markdown.Html.UniqueNameGenerator">
 <summary>
@@ -463,15 +322,6 @@
  Write MarkdownSpan value to a TextWriter
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="M:FSharp.Markdown.Html.|LookupKey|_|``1(System.Collections.Generic.IDictionary{System.String,``0},System.String)">
 <summary>
  Lookup a specified key in a dictionary, possibly
@@ -492,18 +342,6 @@
 <summary>
  [omit]
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="T:FSharp.Markdown.Latex.FormattingContext">
 <summary>
@@ -537,20 +375,11 @@
  Write MarkdownSpan value to a TextWriter
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="M:FSharp.Markdown.Latex.|LookupKey|_|``1(System.Collections.Generic.IDictionary{System.String,``0},System.String)">
 <summary>
  Lookup a specified key in a dictionary, possibly
  ignoring newlines or spaces in the key.
 </summary>
-</member>
-<member name="">
-
 </member>
 <member name="P:FSharp.Markdown.Latex.specialChars">
 <summary>
@@ -563,68 +392,11 @@
  [omit]
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="T:FSharp.Markdown.Matching">
 <summary>
  This module provides an easy way of processing Markdown documents.
  It lets you decompose documents into leafs and nodes with nested paragraphs.
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="T:FSharp.Markdown.Parser.ParsingContext">
 <summary>
@@ -828,17 +600,11 @@
  and an optional title part (may be wrapped using quote or double-quotes)
 </summary>
 </member>
-<member name="T:FSharp.Markdown.Parser">
-
-</member>
 <member name="M:FSharp.Markdown.Utils.replaceTabs(System.Int32)">
 <summary>
  Replace tabs with four spaces - tab will end at the 
  first column that is divisible by four.
 </summary>
-</member>
-<member name="T:FSharp.Markdown.Utils">
-
 </member>
 <member name="M:FSharp.Patterns.|Command|_|``2(``0,System.Collections.Generic.IDictionary{``0,``1})">
 <summary>
@@ -887,9 +653,6 @@
  Removes blank lines from the start and the end of a list
 </summary>
 </member>
-<member name="T:FSharp.Patterns.Lines">
-
-</member>
 <member name="M:FSharp.Patterns.List.|AsString|(Microsoft.FSharp.Collections.FSharpList{System.Char})">
 <summary>
  Returns a list of characters as a string.
@@ -918,9 +681,6 @@
  Matches a list if it starts with a sub-list that is delimited
  using the specified delimiters. Returns a wrapped list and the rest.
 </summary>
-</member>
-<member name="T:FSharp.Patterns.List">
-
 </member>
 <member name="M:FSharp.Patterns.String.removeSpaces(System.Collections.Generic.IEnumerable{System.String})">
 <summary>
@@ -1016,18 +776,6 @@
 <summary>
  Matches when a string is a whitespace or null
 </summary>
-</member>
-<member name="T:FSharp.Patterns.String">
-
-</member>
-<member name="T:FSharp.Patterns">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:System.AssemblyVersionInformation">
-
 </member>
 </members>
 </doc>

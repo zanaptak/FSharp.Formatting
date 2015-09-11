@@ -2,9 +2,6 @@
 <doc>
 <assembly><name>FSharp.Literate</name></assembly>
 <members>
-<member name="">
-
-</member>
 <member name="T:FSharp.Collections.Tree`1">
 <summary>
  Represents a tree with nodes containing values an a list of children
@@ -104,93 +101,21 @@
  [omit]
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="T:FSharp.Literate.CompilerContext">
 <summary>
  Specifies a context that is passed to functions 
  that need to use the F# compiler
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="T:FSharp.Literate.DocPageTemplateBase`1">
 <summary>
  [omit]
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="T:FSharp.Literate.FsiEmbedKind">
 <summary>
  Represents a kind of thing that can be embedded 
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="T:FSharp.Literate.FsiEvaluationFailedInfo">
 <summary>
@@ -198,35 +123,17 @@
  goes wrong during evalutaiton of an expression
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="T:FSharp.Literate.FsiEvaluationResult">
 <summary>
  Represents the result of evaluating an F# snippet. This contains
  the generated console output together with a result and its static type.
 </summary>
 </member>
-<member name="F:FSharp.Literate.FSharp.Literate.FsiEvaluator.valueTransformations">
+<member name="F:FSharp.Literate.FsiEvaluator.valueTransformations">
 <summary>
  Registered transformations for pretty printing values
  (the default formats value as a string and emits single CodeBlock)
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="P:FSharp.Literate.FsiEvaluator.EvaluationFailed">
 <summary>
@@ -260,9 +167,6 @@
  Note however that __SOURCE_DIRECTORY___ does not currently pick this up.
 </summary>
 </member>
-<member name="">
-
-</member>
 <member name="T:FSharp.Literate.FsiEvaluator">
 <summary>
  A wrapper for F# interactive service that is used to evaluate inline snippets
@@ -275,19 +179,10 @@
  e.g. disable registered printers that would open new windows etc.
 </summary>
 </member>
-<member name="">
-
-</member>
 <member name="T:FSharp.Literate.FsiEvaluatorConfig">
 <summary>
  Provides configuration options for the `FsiEvaluator`
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="T:FSharp.Literate.GetMemberBinderImpl">
 <summary>
@@ -314,18 +209,6 @@
 <summary>
  Represents an evaluator for F# snippets embedded in code
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="M:FSharp.Literate.Literate.ProcessScriptFile(System.String,Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.OutputKind},Microsoft.FSharp.Core.FSharpOption{FSharp.CodeFormat.CodeFormatAgent},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{FSharp.Literate.IFsiEvaluator},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,System.String}}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{FSharp.Literate.ProcessingContext,Microsoft.FSharp.Core.FSharpFunc{FSharp.Literate.LiterateDocument,FSharp.Literate.LiterateDocument}}})">
 <summary>
@@ -367,15 +250,6 @@
  Parse Markdown document
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="T:FSharp.Literate.Literate">
 <summary>
  This type provides three simple methods for calling the literate programming tool.
@@ -384,18 +258,18 @@
  (looking for `*.fsx` and `*.md` files).
 </summary>
 </member>
-<member name="F:FSharp.Literate.FSharp.Literate.LiterateCodeOptions.Visibility">
+<member name="P:FSharp.Literate.LiterateCodeOptions.Visibility">
 <summary>
  Specifies the visibility of the snippet in the generated HTML
 </summary>
 </member>
-<member name="F:FSharp.Literate.FSharp.Literate.LiterateCodeOptions.OutputName">
+<member name="P:FSharp.Literate.LiterateCodeOptions.OutputName">
 <summary>
  Specifies the name of the output produced by this snippet
  Use the (*** define-output:foo ***) command to set this value
 </summary>
 </member>
-<member name="F:FSharp.Literate.FSharp.Literate.LiterateCodeOptions.Evaluate">
+<member name="P:FSharp.Literate.LiterateCodeOptions.Evaluate">
 <summary>
  Specifies whether the snippet is evalauted while processing
  Use (*** do-not-eval ***) command to set this to `false`
@@ -408,38 +282,11 @@
  a snippet be evaluated and formatted.
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="T:FSharp.Literate.LiterateCodeVisibility">
 <summary>
  Specifies visibility of a code snippet. This can be either ordinary
  visible code, hidden snippet or named snippet with captured output.
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="P:FSharp.Literate.LiterateDocument.SourceFile">
 <summary>
@@ -480,15 +327,6 @@
 <summary>
  Clone the document and change some of its properties
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="T:FSharp.Literate.LiterateDocument">
 <summary>
@@ -536,9 +374,6 @@
  (*** include:foo ***) - Include formatted snippet from other part of the document here 
 </summary>
 </member>
-<member name="">
-
-</member>
 <member name="T:FSharp.Literate.LiterateParagraph">
 <summary>
  Extends `MarkdownParagrap` using the `MarkdownEmbedParagraphs` case with
@@ -546,263 +381,41 @@
  (such as various special commands to embed output of a snippet etc.)
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="T:FSharp.Literate.LiterateSource">
 <summary>
  Represents the source of a literate document. This is esither Markdown (as a `string`)
  or parsed F# script file consisting of snippets.
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="T:FSharp.Literate.NoOpFsiEventLoop">
 <summary>
  Represents a simple (fake) event loop for the &apos;fsi&apos; object
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="T:FSharp.Literate.NoOpFsiObject">
 <summary>
  Implements a simple &apos;fsi&apos; object to be passed to the FSI evaluator
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="T:FSharp.Literate.OutputKind">
 <summary>
  Defines the two possible output types from literate script: HTML and LaTeX.
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="T:FSharp.Literate.PathTemplateKey">
 <summary>
  [omit]
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="T:FSharp.Literate.ProcessingContext">
 <summary>
  Specifies a context that is passed to functions that generate the output
 </summary>
 </member>
-<member name="F:FSharp.Literate.FSharp.Literate.RazorRender.ViewBag@">
+<member name="F:FSharp.Literate.RazorRender.ViewBag@">
 <summary>
  Dynamic object with more properties (?)
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="P:FSharp.Literate.RazorRender.ViewBag(RazorEngine.Templating.DynamicViewBag)">
 <summary>
@@ -814,70 +427,25 @@
  Dynamic object with more properties (?)
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="T:FSharp.Literate.RazorRender">
 <summary>
  [omit]
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="T:FSharp.Literate.RazorRender`1">
 <summary>
  [omit]
 </summary>
 </member>
-<member name="">
-
-</member>
 <member name="P:FSharp.Literate.StringDictionary.Item(System.String)">
 <summary>
  Report more useful errors when key not found (.NET dictionary does not do this...)
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="T:FSharp.Literate.StringDictionary">
 <summary>
  [omit]
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="P:FSharp.Literate.CodeBlockUtils.parseScriptFile">
 <summary>
@@ -936,9 +504,6 @@
  [omit]
 </summary>
 </member>
-<member name="">
-
-</member>
 <member name="T:FSharp.Literate.Matching">
 <summary>
  Provides active patterns for extracting `LiterateParagraph` values from
@@ -950,17 +515,11 @@
  Parallel for loop with local state
 </summary>
 </member>
-<member name="T:FSharp.Literate.Parallel">
-
-</member>
 <member name="M:FSharp.Literate.ParseMarkdown.parseMarkdown(System.String,System.String)">
 <summary>
  Parse the specified Markdown document and return it
  as `LiterateDocument` (without processing code snippets)
 </summary>
-</member>
-<member name="T:FSharp.Literate.ParseMarkdown">
-
 </member>
 <member name="M:FSharp.Literate.ParseScript.parseScriptFile(System.String,System.String,FSharp.Literate.CompilerContext)">
 <summary>
@@ -981,12 +540,6 @@
  as `hide`, `define` and `include`.
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="T:FSharp.Literate.PathHelper">
 <summary>
  [omit]
@@ -999,27 +552,15 @@
  In short lived applications or with an AppDomain recycle strategy in place.
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="P:FSharp.Literate.RazorEngineCache.razorCache">
 <summary>
  Caching mechanism for IRazorEngineService instances.
 </summary>
 </member>
-<member name="">
-
-</member>
 <member name="M:FSharp.Literate.RazorEngineCache.tryResolve(System.Collections.Generic.IEnumerable{System.String},System.String)">
 <summary>
  Find file in one of the specified layout roots
 </summary>
-</member>
-<member name="">
-
 </member>
 <member name="T:FSharp.Literate.RazorEngineCache">
 <summary>
@@ -1027,9 +568,6 @@
 
  [omit]
 </summary>
-</member>
-<member name="">
-
 </member>
 <member name="M:FSharp.Literate.Templating.generateFile(Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}},System.String,System.Collections.Generic.IEnumerable{System.Tuple{System.String,System.String}},Microsoft.FSharp.Core.FSharpOption{System.String},System.String,System.Collections.Generic.IEnumerable{System.String})">
 <summary>
@@ -1047,12 +585,6 @@
 <summary>
  [omit]
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="T:FSharp.Literate.Transformations.EvalKey">
 <summary>
@@ -1080,9 +612,6 @@
 <summary>
  Transform the specified literate document &amp; evaluate all F# snippets
 </summary>
-</member>
-<member name="">
-
 </member>
 <member name="M:FSharp.Literate.Transformations.evalAllSnippets(FSharp.Literate.IFsiEvaluator,FSharp.Literate.LiterateDocument)">
 <summary>
@@ -1199,9 +728,6 @@
  Removes blank lines from the start and the end of a list
 </summary>
 </member>
-<member name="T:FSharp.Patterns.Lines">
-
-</member>
 <member name="M:FSharp.Patterns.List.|AsString|(Microsoft.FSharp.Collections.FSharpList{System.Char})">
 <summary>
  Returns a list of characters as a string.
@@ -1230,9 +756,6 @@
  Matches a list if it starts with a sub-list that is delimited
  using the specified delimiters. Returns a wrapped list and the rest.
 </summary>
-</member>
-<member name="T:FSharp.Patterns.List">
-
 </member>
 <member name="M:FSharp.Patterns.String.removeSpaces(System.Collections.Generic.IEnumerable{System.String})">
 <summary>
@@ -1328,18 +851,6 @@
 <summary>
  Matches when a string is a whitespace or null
 </summary>
-</member>
-<member name="T:FSharp.Patterns.String">
-
-</member>
-<member name="T:FSharp.Patterns">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:System.AssemblyVersionInformation">
-
 </member>
 </members>
 </doc>

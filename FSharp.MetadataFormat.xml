@@ -2,9 +2,6 @@
 <doc>
 <assembly><name>FSharp.MetadataFormat</name></assembly>
 <members>
-<member name="">
-
-</member>
 <member name="T:FSharp.Collections.Tree`1">
 <summary>
  Represents a tree with nodes containing values an a list of children
@@ -104,197 +101,20 @@
  [omit]
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="T:FSharp.MetadataFormat.DocPageTemplateBase`1">
 <summary>
  [omit]
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="T:FSharp.MetadataFormat.GetMemberBinderImpl">
 <summary>
  [omit]
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="T:FSharp.MetadataFormat.Html">
 <summary>
  For use in the tempaltes (lives in namespace FSharp.MetadataFormat)
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="M:FSharp.MetadataFormat.MetadataFormat.Generate(Microsoft.FSharp.Collections.FSharpList{System.String},System.String,Microsoft.FSharp.Collections.FSharpList{System.String},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,System.String}}},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Uri,Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Int32,System.String}}}},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.String}})">
 <summary>
@@ -340,138 +160,15 @@
 
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="T:FSharp.MetadataFormat.PathTemplateKey">
 <summary>
  [omit]
 </summary>
 </member>
-<member name="F:FSharp.MetadataFormat.FSharp.MetadataFormat.RazorRender.ViewBag@">
+<member name="F:FSharp.MetadataFormat.RazorRender.ViewBag@">
 <summary>
  Dynamic object with more properties (?)
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="P:FSharp.MetadataFormat.RazorRender.ViewBag(RazorEngine.Templating.DynamicViewBag)">
 <summary>
@@ -483,124 +180,25 @@
  Dynamic object with more properties (?)
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="T:FSharp.MetadataFormat.RazorRender">
 <summary>
  [omit]
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="T:FSharp.MetadataFormat.RazorRender`1">
 <summary>
  [omit]
 </summary>
 </member>
-<member name="">
-
-</member>
 <member name="P:FSharp.MetadataFormat.StringDictionary.Item(System.String)">
 <summary>
  Report more useful errors when key not found (.NET dictionary does not do this...)
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="T:FSharp.MetadataFormat.StringDictionary">
 <summary>
  [omit]
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="T:FSharp.MetadataFormat.ExtensionMethods">
 <summary>
@@ -611,15 +209,6 @@
 <summary>
  Parallel for loop with local state
 </summary>
-</member>
-<member name="T:FSharp.MetadataFormat.Parallel">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="T:FSharp.MetadataFormat.PathHelper">
 <summary>
@@ -633,27 +222,15 @@
  In short lived applications or with an AppDomain recycle strategy in place.
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="P:FSharp.MetadataFormat.RazorEngineCache.razorCache">
 <summary>
  Caching mechanism for IRazorEngineService instances.
 </summary>
 </member>
-<member name="">
-
-</member>
 <member name="M:FSharp.MetadataFormat.RazorEngineCache.tryResolve(System.Collections.Generic.IEnumerable{System.String},System.String)">
 <summary>
  Find file in one of the specified layout roots
 </summary>
-</member>
-<member name="">
-
 </member>
 <member name="T:FSharp.MetadataFormat.RazorEngineCache">
 <summary>
@@ -662,234 +239,12 @@
  [omit]
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="M:FSharp.MetadataFormat.Reader.readCommentsInto``1(FSharp.MetadataFormat.ValueReader.ReadingContext,System.String,Microsoft.FSharp.Core.FSharpFunc{System.String,Microsoft.FSharp.Core.FSharpFunc{System.Collections.Generic.IDictionary{System.String,System.String},Microsoft.FSharp.Core.FSharpFunc{FSharp.MetadataFormat.Comment,``0}}})">
 <summary>
  Reads XML documentation comments and calls the specified function
  to parse the rest of the entity, unless [omit] command is set.
  The function is called with category name, commands &amp; comment.
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharp.MetadataFormat.Reader">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharp.MetadataFormat.ValueReader">
-
 </member>
 <member name="M:FSharp.Patterns.|Command|_|``2(``0,System.Collections.Generic.IDictionary{``0,``1})">
 <summary>
@@ -938,9 +293,6 @@
  Removes blank lines from the start and the end of a list
 </summary>
 </member>
-<member name="T:FSharp.Patterns.Lines">
-
-</member>
 <member name="M:FSharp.Patterns.List.|AsString|(Microsoft.FSharp.Collections.FSharpList{System.Char})">
 <summary>
  Returns a list of characters as a string.
@@ -969,9 +321,6 @@
  Matches a list if it starts with a sub-list that is delimited
  using the specified delimiters. Returns a wrapped list and the rest.
 </summary>
-</member>
-<member name="T:FSharp.Patterns.List">
-
 </member>
 <member name="M:FSharp.Patterns.String.removeSpaces(System.Collections.Generic.IEnumerable{System.String})">
 <summary>
@@ -1067,18 +416,6 @@
 <summary>
  Matches when a string is a whitespace or null
 </summary>
-</member>
-<member name="T:FSharp.Patterns.String">
-
-</member>
-<member name="T:FSharp.Patterns">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:System.AssemblyVersionInformation">
-
 </member>
 </members>
 </doc>
