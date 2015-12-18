@@ -82,6 +82,10 @@ namespace csharpSupport
         /// </summary>
         private static event EventHandler StaticPrivateEvent;
 
+        /// <summary>
+        /// My_Readonly_Field
+        /// </summary>
+        public readonly bool ReadonlyField;
 
         /// <summary>
         /// My_Constructor

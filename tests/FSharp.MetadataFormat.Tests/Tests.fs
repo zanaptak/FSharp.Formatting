@@ -236,6 +236,7 @@ let ``MetadataFormat test that csharp (publiconly) support works``() =
 
   files.["csharpsupport-sampleclass.html"] |> should contain "My_Sample_Class"
 
+  files.["csharpsupport-sampleclass.html"] |> should contain "My_Readonly_Field"
   files.["csharpsupport-sampleclass.html"] |> should contain "My_Constructor"
   files.["csharpsupport-sampleclass.html"] |> should contain "My_Method"
   files.["csharpsupport-sampleclass.html"] |> should contain "My_Property"
