@@ -1,6 +1,7 @@
 ## 4.0.0-rc2
   - Add .NET Core support for all libraries.
   - Update to FSCS v35.0.
+  - Add helpers for CustomOperationAttribute.
 
 ## 4.0.0-rc1
 
