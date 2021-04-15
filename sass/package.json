@@ -1,0 +1,14 @@
+{
+  "name": "fsharp-formatting-styles",
+  "version": "0.1.0",
+  "description": "styling base for templates for FSharp.Formatting",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kevin Schneider",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.32.8"
+  }
+}

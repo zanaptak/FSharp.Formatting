@@ -43,3 +43,6 @@ tmp
 *.binlog
 version.props
 src/Common/AssemblyInfo.?s
+/sass/node_modules
+/sass/fsdocs-custom.css.map
+/sass/fsdocs-custom.css
