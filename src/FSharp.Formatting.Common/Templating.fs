@@ -218,4 +218,11 @@ module internal SimpleTemplating =
         with _ ->
             ()
 
+        // Normalize EOL to current platform
+        let outputText =
+            System.Text.RegularExpressions.Regex.Replace(
+                outputText
+                , @"(\r)?\n|\r"
+                , System.Environment.NewLine
+            )
         File.WriteAllText(outputFile, outputText)
