@@ -2,6 +2,11 @@
 module internal FSharp.Formatting.ApiDocs.Categorise
 
 open System
+open System.Text.RegularExpressions
+
+/// Pad numbers with leading zeroes for natural sort
+let naturalize s =
+    Regex.Replace( s , """\d+""" , fun ( m : Match ) -> m.Value.PadLeft( 20 , '0' ) )
 
 // Honour the CategoryIndex to put the categories in the right order
 let private getSortedCategories xs exclude category categoryIndex =
@@ -16,7 +21,7 @@ let private getSortedCategories xs exclude category categoryIndex =
 let getMembersByCategory (members: ApiDocMember list) =
     getSortedCategories members (fun m -> m.Exclude) (fun m -> m.Category) (fun m -> m.CategoryIndex)
     |> List.mapi (fun i (key, elems) ->
-        let elems = elems |> List.sortBy (fun m -> m.Name)
+        let elems = elems |> List.sortBy (fun m -> naturalize m.Name , m.Parameters.Length)
 
         let name =
             if String.IsNullOrEmpty(key) then

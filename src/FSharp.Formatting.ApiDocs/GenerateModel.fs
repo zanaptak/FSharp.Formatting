@@ -1103,7 +1103,8 @@ module internal TypeFormatter =
                 .Replace(" ", "")
                 .Replace("\n", "")
                 .Replace("\r", "")
-                .Replace("<ahref", "<a href"),
+                .Replace("<ahref", "<a href")
+                .Replace("<spanstyle", "<span style"),
             None
         )
 
@@ -1273,7 +1274,14 @@ module internal TypeFormatter =
             | [ argName ] when argName = "()" -> !! "()"
             | [ argName ] when preferNoParens -> !!argName
             | args ->
-                let argText = args |> List.map (!!) |> Html.sepWith ",&#32;"
+                let argText =
+                    args
+                    |> List.map( fun a ->
+                        if a.Contains "?" then
+                            span [ Custom( "style" , "white-space:nowrap" ) ] [ !! a ] // prevent break on question mark
+                        else !! a
+                    )
+                    |> Html.sepWith ",&#32;"
 
                 if isItemIndexer then argText else bracketHtml argText)
         |> Html.sepWith "&#32;"
@@ -2564,7 +2572,7 @@ module internal SymbolReader =
                 |> List.filter (fun v ->
                     checkAccess ctx v.Accessibility
                     && not v.IsCompilerGenerated
-                    && not v.IsOverrideOrExplicitInterfaceImplementation)
+                    && not v.IsExplicitInterfaceImplementation)
                 |> List.filter (fun v ->
                     not v.IsCompilerGenerated
                     && not v.IsEventAddMethod

@@ -36,10 +36,11 @@ type MarkdownRender(model: ApiDocModel, ?menuTemplateFolder: string) =
               ``###`` [ !!header ]
 
               table
-                  [ [ p [ !!tableHeader ] ]; [ p [ !! "Description" ] ]; [ p [ !! "Source" ] ] ]
-                  [ AlignLeft; AlignLeft; AlignCenter ]
+                  [ [ p [ !!tableHeader ] ]; [ p [ !! "Description" ] ] ]
+                  [ AlignLeft; AlignLeft ]
                   [ for m in members ->
-                        [ [ p [ link [ embedSafe (m.UsageHtml) ] ("#" + urlEncode (m.Name)) ] ]
+                        // [ [ p [ link [ embedSafe (m.UsageHtml) ] ("#" + urlEncode (m.Name)) ] ]
+                        [ [ p [ embedSafe (m.UsageHtml) ] ]
                           [ let summary = m.Comment.Summary
 
                             let emptySummary = summary.HtmlText |> String.IsNullOrWhiteSpace
@@ -106,7 +107,8 @@ type MarkdownRender(model: ApiDocModel, ?menuTemplateFolder: string) =
                             for e in m.Comment.Examples do
                                 p [ !! "Example" ]
                                 p [ embed e; br ] ]
-                          [ p [ yield! sourceLink m.SourceLocation ] ] ] ] ]
+
+                            ] ] ]
 
     let renderEntities (entities: ApiDocEntity list) =
         [ if entities.Length > 0 then
