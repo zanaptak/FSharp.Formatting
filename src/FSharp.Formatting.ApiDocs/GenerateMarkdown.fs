@@ -36,6 +36,8 @@ type MarkdownRender(model: ApiDocModel, ?menuTemplateFolder: string) =
               ``###`` [ !!header ]
 
               table
+                //   [ [ p [ !!tableHeader ] ]; [ p [ !! "Description" ] ]; [ p [ !! "Source" ] ] ]
+                //   [ AlignLeft; AlignLeft; AlignCenter ]
                   [ [ p [ !!tableHeader ] ]; [ p [ !! "Description" ] ] ]
                   [ AlignLeft; AlignLeft ]
                   [ for m in members ->
@@ -107,6 +109,10 @@ type MarkdownRender(model: ApiDocModel, ?menuTemplateFolder: string) =
                             for e in m.Comment.Examples do
                                 p [ !! "Example" ]
                                 p [ embed e; br ] ]
+
+                            //[
+                            //  p [yield! sourceLink m.SourceLocation]
+                            //]
 
                             ] ] ]
 
